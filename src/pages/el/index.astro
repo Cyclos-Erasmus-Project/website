@@ -1,238 +1,384 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro'
-import { useTranslations, type Language } from '../../i18n/translations'
-import { getCollection } from 'astro:content'
-import assocLogo from '../../assets/assoc.png'
-import cslLogo from '../../assets/cssa.png'
-import afisLogo from '../../assets/afis.png'
-import flvsLogo from '../../assets/vif.png'
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { useTranslations, type Language } from "../../i18n/translations";
+import { getCollection } from "astro:content";
+import assocLogo from "../../assets/assoc.png";
+import cslLogo from "../../assets/cssa.png";
+import afisLogo from "../../assets/afis.png";
+import flvsLogo from "../../assets/vif.png";
+import happyImg from "../../assets/happy.png";
 
-const lang: Language = 'el'
-const base = import.meta.env.BASE_URL.replace(/\/$/, '')
-const t = useTranslations(lang)
+const lang: Language = "el";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const t = useTranslations(lang);
 
 const objectives = [
-  { key: 'inclusion', icon: 'users' },
-  { key: 'mobility', icon: 'leaf' },
-  { key: 'skills', icon: 'star' },
-  { key: 'tools', icon: 'briefcase' }
-]
+    { key: "inclusion", icon: "users" },
+    { key: "mobility", icon: "leaf" },
+    { key: "skills", icon: "star" },
+    { key: "tools", icon: "briefcase" },
+];
 
 const partners = [
-  { name: 'FLVS', fullName: 'Fédérons Les Villes pour la Santé', country: 'Γαλλία', lead: true, logo: null },
-  { name: 'ASSOC', fullName: 'Asociatia Profesionala Neguvernamentala de Asistenta Sociala', country: 'Romania', lead: false, logo: assocLogo.src },
-  { name: 'AFIS', fullName: 'Austrian Forum for Integration and Sustainability', country: 'Αυστρία', lead: false, logo: null },
-  { name: 'CSL', fullName: 'Computer Solutions SA', country: 'Greece', lead: false, logo: cslLogo.src }
-]
+    {
+        name: "FLVS",
+        fullName: "Fédérons Les Villes pour la Santé",
+        country: "Γαλλία",
+        lead: true,
+        logo: null,
+    },
+    {
+        name: "ASSOC",
+        fullName:
+            "Asociatia Profesionala Neguvernamentala de Asistenta Sociala",
+        country: "Romania",
+        lead: false,
+        logo: assocLogo.src,
+    },
+    {
+        name: "AFIS",
+        fullName: "Austrian Forum for Integration and Sustainability",
+        country: "Αυστρία",
+        lead: false,
+        logo: null,
+    },
+    {
+        name: "CSL",
+        fullName: "Computer Solutions SA",
+        country: "Greece",
+        lead: false,
+        logo: cslLogo.src,
+    },
+];
 
 const workPackages = [
-  { id: 'wp1', num: 1 },
-  { id: 'wp2', num: 2 },
-  { id: 'wp3', num: 3 },
-  { id: 'wp4', num: 4 },
-  { id: 'wp5', num: 5 }
-]
+    { id: "wp1", num: 1 },
+    { id: "wp2", num: 2 },
+    { id: "wp3", num: 3 },
+    { id: "wp4", num: 4 },
+    { id: "wp5", num: 5 },
+];
 
 // Get latest news for this language
-const allNews = await getCollection('news', ({ data }) => data.lang === lang)
+const allNews = await getCollection("news", ({ data }) => data.lang === lang);
 const latestNews = allNews
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-  .slice(0, 3)
+    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+    .slice(0, 3);
 
 function formatDate(date: Date): string {
-  return date.toLocaleDateString(lang, { year: 'numeric', month: 'long', day: 'numeric' })
+    return date.toLocaleDateString(lang, {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+    });
 }
 ---
 
-<BaseLayout title={t('nav.home')} lang={lang}>
-  <!-- Hero Section -->
-  <section class="relative text-white py-20 md:py-32 overflow-hidden min-h-[500px] flex items-center">
-    <!-- Video Background -->
-    <video
-      autoplay
-      muted
-      loop
-      playsinline
-      class="absolute inset-0 w-full h-full object-cover"
+<BaseLayout title={t("nav.home")} lang={lang}>
+    <!-- Hero Section -->
+    <section
+        class="relative text-white py-20 md:py-32 overflow-hidden min-h-[500px] flex items-center"
     >
-      <source src={`${base}/videos/hero1.mp4`} type="video/mp4" />
-    </video>
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-blue-800/70 to-blue-900/80"></div>
-
-    <div class="container-wide relative z-10">
-      <div class="max-w-3xl">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg">
-          {t('home.hero.title')}
-        </h1>
-        <p class="text-xl md:text-2xl text-blue-100 mb-8 drop-shadow-md">
-          {t('home.hero.subtitle')}
-        </p>
-        <div class="flex flex-wrap gap-4">
-          <a href={`${base}/${lang}/about/`} class="btn bg-lime-500 text-gray-900 hover:bg-lime-400 font-semibold">
-            {t('home.hero.cta')}
-          </a>
-          <a href={`${base}/${lang}/partners/`} class="btn border-2 border-white text-white hover:bg-white/10">
-            {t('home.partners.viewAll')}
-          </a>
+        <!-- Video Background -->
+        <video
+            autoplay
+            muted
+            loop
+            playsinline
+            class="absolute inset-0 w-full h-full object-cover"
+        >
+            <source src={`${base}/videos/hero1.mp4`} type="video/mp4" />
+        </video>
+        <!-- Overlay -->
+        <div
+            class="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-blue-800/70 to-blue-900/80"
+        >
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Objectives Section -->
-  <section class="section">
-    <div class="container-wide">
-      <h2 class="text-center mb-12">{t('home.objectives.title')}</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {objectives.map((obj) => (
-          <div class="card p-6 text-center hover:shadow-lg transition-shadow">
-            <div class="w-16 h-16 mx-auto mb-4 bg-lime-100 rounded-full flex items-center justify-center">
-              {obj.icon === 'users' && (
-                <svg class="w-8 h-8 text-lime-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-              )}
-              {obj.icon === 'leaf' && (
-                <svg class="w-8 h-8 text-lime-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                </svg>
-              )}
-              {obj.icon === 'star' && (
-                <svg class="w-8 h-8 text-lime-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                </svg>
-              )}
-              {obj.icon === 'briefcase' && (
-                <svg class="w-8 h-8 text-lime-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              )}
+        <div class="container-wide relative z-10">
+            <div class="max-w-3xl">
+                <h1
+                    class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 drop-shadow-lg"
+                >
+                    {t("home.hero.title")}
+                </h1>
+                <p
+                    class="text-xl md:text-2xl text-blue-100 mb-8 drop-shadow-md"
+                >
+                    {t("home.hero.subtitle")}
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a
+                        href={`${base}/${lang}/about/`}
+                        class="btn bg-lime-500 text-gray-900 hover:bg-lime-400 font-semibold"
+                    >
+                        {t("home.hero.cta")}
+                    </a>
+                    <a
+                        href={`${base}/${lang}/partners/`}
+                        class="btn border-2 border-white text-white hover:bg-white/10"
+                    >
+                        {t("home.partners.viewAll")}
+                    </a>
+                </div>
             </div>
-            <h3 class="text-xl font-semibold mb-2">{t(`home.objectives.${obj.key}` as any)}</h3>
-            <p class="text-gray-600">{t(`home.objectives.${obj.key}Desc` as any)}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- Partners Section -->
-  <section class="section-alt">
-    <div class="container-wide">
-      <h2 class="text-center mb-4">{t('home.partners.title')}</h2>
-      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-        Τέσσερις οργανισμοί σε όλη την Ευρώπη συνεργάζονται για την ένταξη των νέων μέσω της ποδηλασίας
-      </p>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-        {partners.map((partner) => (
-          <div class="card p-6 text-center hover:shadow-lg transition-shadow">
-            <div class="w-20 h-20 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center overflow-hidden">
-              {partner.logo ? (
-                <img src={partner.logo} alt={partner.name} class="w-16 h-16 object-contain" />
-              ) : (
-                <span class="text-2xl font-bold text-blue-500">{partner.name.charAt(0)}</span>
-              )}
-            </div>
-            <h3 class="font-semibold">{partner.name}</h3>
-            <p class="text-sm text-gray-500">{partner.country}</p>
-            {partner.lead && (
-              <span class="inline-block mt-2 text-xs bg-lime-100 text-lime-700 px-2 py-1 rounded-full">
-                {t('partners.lead')}
-              </span>
-            )}
-          </div>
-        ))}
-      </div>
-      <div class="text-center mt-8">
-        <a href={`${base}/${lang}/partners/`} class="btn-outline">
-          {t('home.partners.viewAll')}
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Work Packages Section -->
-  <section class="section">
-    <div class="container-wide">
-      <h2 class="text-center mb-4">{t('home.workPackages.title')}</h2>
-      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-        {t('wp.subtitle')}
-      </p>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {workPackages.map((wp) => (
-          <div class="card p-6 hover:shadow-lg transition-shadow border-l-4 border-lime-500">
-            <div class="flex items-center mb-3">
-              <span class="w-10 h-10 bg-lime-100 text-lime-700 rounded-full flex items-center justify-center font-bold mr-3">
-                {wp.num}
-              </span>
-              <h3 class="font-semibold">{t(`wp.${wp.id}.title` as any)}</h3>
-            </div>
-            <p class="text-gray-600 text-sm">{t(`wp.${wp.id}.desc` as any)}</p>
-          </div>
-        ))}
-      </div>
-      <div class="text-center mt-8">
-        <a href={`${base}/${lang}/work-packages/`} class="btn-primary">
-          {t('home.workPackages.viewAll')}
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Latest News Section -->
-  <section class="section-alt">
-    <div class="container-wide">
-      <h2 class="text-center mb-4">{t('home.news.title')}</h2>
-      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-        {t('news.subtitle')}
-      </p>
-      {latestNews.length > 0 ? (
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {latestNews.map((item) => (
-            <article class="card hover:shadow-lg transition-shadow">
-              <div class="h-40 bg-gradient-to-br from-lime-100 to-blue-100 flex items-center justify-center">
-                <svg class="w-12 h-12 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-                </svg>
-              </div>
-              <div class="p-6">
-                <time class="text-sm text-gray-500" datetime={item.data.date.toISOString()}>
-                  {formatDate(item.data.date)}
-                </time>
-                <h3 class="text-lg font-semibold mt-2 mb-3">
-                  <a href={`${base}/${lang}/news/`} class="hover:text-blue-500 transition-colors">
-                    {item.data.title}
-                  </a>
-                </h3>
-                <p class="text-gray-600 text-sm line-clamp-3">{item.data.excerpt}</p>
-              </div>
-            </article>
-          ))}
         </div>
-      ) : (
-        <div class="text-center py-8">
-          <p class="text-gray-500">{t('news.noNews')}</p>
-        </div>
-      )}
-      <div class="text-center mt-8">
-        <a href={`${base}/${lang}/news/`} class="btn-outline">
-          {t('home.news.viewAll')}
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA Section -->
-  <section class="bg-gradient-to-r from-blue-600 to-lime-600 text-white py-16">
-    <div class="container-wide text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-4">Συμμετέχετε στο CYCLOS</h2>
-      <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-        Ελάτε μαζί μας για να προωθήσουμε την κοινωνική ένταξη μέσω της ποδηλασίας. Επικοινωνήστε με την ομάδα του έργου για να μάθετε περισσότερα.
-      </p>
-      <a href={`${base}/${lang}/contact/`} class="btn bg-white text-lime-700 hover:bg-lime-50">
-        {t('nav.contact')}
-      </a>
-    </div>
-  </section>
+    <!-- Objectives Section -->
+    <section class="section">
+        <div class="container-wide">
+            <h2 class="text-center mb-12">{t("home.objectives.title")}</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {
+                    objectives.map((obj) => (
+                        <div class="card p-6 text-center hover:shadow-lg transition-shadow">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-lime-100 rounded-full flex items-center justify-center">
+                                {obj.icon === "users" && (
+                                    <svg
+                                        class="w-8 h-8 text-lime-600"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                                        />
+                                    </svg>
+                                )}
+                                {obj.icon === "leaf" && (
+                                    <svg
+                                        class="w-8 h-8 text-lime-600"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                                        />
+                                    </svg>
+                                )}
+                                {obj.icon === "star" && (
+                                    <svg
+                                        class="w-8 h-8 text-lime-600"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+                                        />
+                                    </svg>
+                                )}
+                                {obj.icon === "briefcase" && (
+                                    <svg
+                                        class="w-8 h-8 text-lime-600"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                                        />
+                                    </svg>
+                                )}
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2">
+                                {t(`home.objectives.${obj.key}` as any)}
+                            </h3>
+                            <p class="text-gray-600">
+                                {t(`home.objectives.${obj.key}Desc` as any)}
+                            </p>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </section>
+
+    <!-- Happy Image Section -->
+    <section class="w-full">
+        <img
+            src={happyImg.src}
+            alt="Youth cycling for inclusion"
+            class="w-full h-auto object-cover max-h-[700px]"
+        />
+    </section>
+
+    <!-- Partners Section -->
+    <section class="section-alt">
+        <div class="container-wide">
+            <h2 class="text-center mb-4">{t("home.partners.title")}</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Τέσσερις οργανισμοί σε όλη την Ευρώπη συνεργάζονται για την
+                ένταξη των νέων μέσω της ποδηλασίας
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                {
+                    partners.map((partner) => (
+                        <div class="card p-6 text-center hover:shadow-lg transition-shadow">
+                            <div class="w-20 h-20 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center overflow-hidden">
+                                {partner.logo ? (
+                                    <img
+                                        src={partner.logo}
+                                        alt={partner.name}
+                                        class="w-16 h-16 object-contain"
+                                    />
+                                ) : (
+                                    <span class="text-2xl font-bold text-blue-500">
+                                        {partner.name.charAt(0)}
+                                    </span>
+                                )}
+                            </div>
+                            <h3 class="font-semibold">{partner.name}</h3>
+                            <p class="text-sm text-gray-500">
+                                {partner.country}
+                            </p>
+                            {partner.lead && (
+                                <span class="inline-block mt-2 text-xs bg-lime-100 text-lime-700 px-2 py-1 rounded-full">
+                                    {t("partners.lead")}
+                                </span>
+                            )}
+                        </div>
+                    ))
+                }
+            </div>
+            <div class="text-center mt-8">
+                <a href={`${base}/${lang}/partners/`} class="btn-outline">
+                    {t("home.partners.viewAll")}
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Packages Section -->
+    <section class="section">
+        <div class="container-wide">
+            <h2 class="text-center mb-4">{t("home.workPackages.title")}</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                {t("wp.subtitle")}
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {
+                    workPackages.map((wp) => (
+                        <div class="card p-6 hover:shadow-lg transition-shadow border-l-4 border-lime-500">
+                            <div class="flex items-center mb-3">
+                                <span class="w-10 h-10 bg-lime-100 text-lime-700 rounded-full flex items-center justify-center font-bold mr-3">
+                                    {wp.num}
+                                </span>
+                                <h3 class="font-semibold">
+                                    {t(`wp.${wp.id}.title` as any)}
+                                </h3>
+                            </div>
+                            <p class="text-gray-600 text-sm">
+                                {t(`wp.${wp.id}.desc` as any)}
+                            </p>
+                        </div>
+                    ))
+                }
+            </div>
+            <div class="text-center mt-8">
+                <a href={`${base}/${lang}/work-packages/`} class="btn-primary">
+                    {t("home.workPackages.viewAll")}
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News Section -->
+    <section class="section-alt">
+        <div class="container-wide">
+            <h2 class="text-center mb-4">{t("home.news.title")}</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                {t("news.subtitle")}
+            </p>
+            {
+                latestNews.length > 0 ? (
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {latestNews.map((item) => (
+                            <article class="card hover:shadow-lg transition-shadow">
+                                <div class="h-40 bg-gradient-to-br from-lime-100 to-blue-100 flex items-center justify-center">
+                                    <svg
+                                        class="w-12 h-12 text-blue-300"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+                                        />
+                                    </svg>
+                                </div>
+                                <div class="p-6">
+                                    <time
+                                        class="text-sm text-gray-500"
+                                        datetime={item.data.date.toISOString()}
+                                    >
+                                        {formatDate(item.data.date)}
+                                    </time>
+                                    <h3 class="text-lg font-semibold mt-2 mb-3">
+                                        <a
+                                            href={`${base}/${lang}/news/`}
+                                            class="hover:text-blue-500 transition-colors"
+                                        >
+                                            {item.data.title}
+                                        </a>
+                                    </h3>
+                                    <p class="text-gray-600 text-sm line-clamp-3">
+                                        {item.data.excerpt}
+                                    </p>
+                                </div>
+                            </article>
+                        ))}
+                    </div>
+                ) : (
+                    <div class="text-center py-8">
+                        <p class="text-gray-500">{t("news.noNews")}</p>
+                    </div>
+                )
+            }
+            <div class="text-center mt-8">
+                <a href={`${base}/${lang}/news/`} class="btn-outline">
+                    {t("home.news.viewAll")}
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+        class="bg-gradient-to-r from-blue-600 to-lime-600 text-white py-16"
+    >
+        <div class="container-wide text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Συμμετέχετε στο CYCLOS
+            </h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Ελάτε μαζί μας για να προωθήσουμε την κοινωνική ένταξη μέσω της
+                ποδηλασίας. Επικοινωνήστε με την ομάδα του έργου για να μάθετε
+                περισσότερα.
+            </p>
+            <a
+                href={`${base}/${lang}/contact/`}
+                class="btn bg-white text-lime-700 hover:bg-lime-50"
+            >
+                {t("nav.contact")}
+            </a>
+        </div>
+    </section>
 </BaseLayout>
