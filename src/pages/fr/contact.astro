@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import { useTranslations, type Language } from '../../i18n/translations'
+import contactImg from '../../assets/contact.png'
 
 const lang: Language = 'fr'
 const t = useTranslations(lang)
@@ -50,10 +51,14 @@ const otherPartners = partners.filter(p => !p.lead)
 
 <BaseLayout title={t('nav.contact')} lang={lang}>
   <!-- Hero -->
-  <section class="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-16 md:py-24">
-    <div class="container-wide">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">{t('contact.title')}</h1>
-      <p class="text-xl text-blue-100 max-w-3xl">
+  <section class="relative text-white py-16 md:py-24 overflow-hidden">
+    <div class="absolute inset-0">
+            <img src={contactImg.src} alt="" class="w-full h-full object-cover object-center" />
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-900/80 to-blue-800/80"></div>
+        </div>
+        <div class="container-wide relative z-10">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">{t('contact.title')}</h1>
+      <p class="text-xl text-blue-100 max-w-3xl drop-shadow-md">
         {t('contact.subtitle')}
       </p>
     </div>
