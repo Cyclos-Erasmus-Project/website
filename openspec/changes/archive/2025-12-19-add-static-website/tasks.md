@@ -40,20 +40,20 @@
 - [x] 6.1 Ensure semantic HTML structure
 - [x] 6.2 Add skip-to-content link
 - [x] 6.3 Implement keyboard navigation
-- [ ] 6.4 Verify color contrast ratios (WCAG AA)
-- [ ] 6.5 Add alt text to all images
-- [ ] 6.6 Test with screen reader
+- [-] 6.4 Verify color contrast ratios (WCAG AA) [DEFERRED]
+- [-] 6.5 Add alt text to all images [DEFERRED]
+- [-] 6.6 Test with screen reader [DEFERRED]
 
 ## 7. Assets & Branding
-- [ ] 7.1 Process and optimize CYCLOS logo files
-- [ ] 7.2 Add partner organization logos
-- [ ] 7.3 Include ERASMUS+ / EU co-funding logos
+- [-] 7.1 Process and optimize CYCLOS logo files [DEFERRED]
+- [-] 7.2 Add partner organization logos [DEFERRED]
+- [-] 7.3 Include ERASMUS+ / EU co-funding logos [DEFERRED]
 - [x] 7.4 Set up favicon and Open Graph images
-- [ ] 7.5 Create placeholder images for content
+- [-] 7.5 Create placeholder images for content [DEFERRED]
 
 ## 8. Build & Deployment
 - [x] 8.1 Configure build settings for static output
-- [ ] 8.2 Set up deployment configuration (GitHub Pages/Netlify/Vercel)
-- [ ] 8.3 Run Lighthouse audit and fix issues
-- [ ] 8.4 Test across browsers (Chrome, Firefox, Safari, Edge)
-- [ ] 8.5 Verify mobile responsiveness
+- [-] 8.2 Set up deployment configuration (GitHub Pages/Netlify/Vercel) [DEFERRED]
+- [-] 8.3 Run Lighthouse audit and fix issues [DEFERRED]
+- [-] 8.4 Test across browsers (Chrome, Firefox, Safari, Edge) [DEFERRED]
+- [-] 8.5 Verify mobile responsiveness [DEFERRED]
