@@ -8,6 +8,7 @@ interface Props {
 const { lang } = Astro.props
 const t = useTranslations(lang)
 const currentYear = new Date().getFullYear()
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 ---
 
 <footer class="bg-gray-900 text-white">
@@ -62,10 +63,10 @@ const currentYear = new Date().getFullYear()
       <div>
         <h3 class="font-semibold text-lg mb-4">{t('nav.home')}</h3>
         <ul class="space-y-2">
-          <li><a href={`/${lang}/about/`} class="text-gray-400 hover:text-white transition-colors">{t('nav.about')}</a></li>
-          <li><a href={`/${lang}/partners/`} class="text-gray-400 hover:text-white transition-colors">{t('nav.partners')}</a></li>
-          <li><a href={`/${lang}/work-packages/`} class="text-gray-400 hover:text-white transition-colors">{t('nav.workPackages')}</a></li>
-          <li><a href={`/${lang}/news/`} class="text-gray-400 hover:text-white transition-colors">{t('nav.news')}</a></li>
+          <li><a href={`${base}/${lang}/about/`} class="text-gray-400 hover:text-white transition-colors">{t('nav.about')}</a></li>
+          <li><a href={`${base}/${lang}/partners/`} class="text-gray-400 hover:text-white transition-colors">{t('nav.partners')}</a></li>
+          <li><a href={`${base}/${lang}/work-packages/`} class="text-gray-400 hover:text-white transition-colors">{t('nav.workPackages')}</a></li>
+          <li><a href={`${base}/${lang}/news/`} class="text-gray-400 hover:text-white transition-colors">{t('nav.news')}</a></li>
         </ul>
       </div>
 
@@ -73,8 +74,8 @@ const currentYear = new Date().getFullYear()
       <div>
         <h3 class="font-semibold text-lg mb-4">{t('nav.resources')}</h3>
         <ul class="space-y-2">
-          <li><a href={`/${lang}/resources/`} class="text-gray-400 hover:text-white transition-colors">{t('nav.resources')}</a></li>
-          <li><a href={`/${lang}/contact/`} class="text-gray-400 hover:text-white transition-colors">{t('nav.contact')}</a></li>
+          <li><a href={`${base}/${lang}/resources/`} class="text-gray-400 hover:text-white transition-colors">{t('nav.resources')}</a></li>
+          <li><a href={`${base}/${lang}/contact/`} class="text-gray-400 hover:text-white transition-colors">{t('nav.contact')}</a></li>
         </ul>
       </div>
 

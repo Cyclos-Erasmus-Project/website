@@ -10,21 +10,22 @@ interface Props {
 
 const { lang, currentPath } = Astro.props
 const t = useTranslations(lang)
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 
 const navItems = [
-  { href: `/${lang}/`, label: t('nav.home') },
-  { href: `/${lang}/about/`, label: t('nav.about') },
-  { href: `/${lang}/partners/`, label: t('nav.partners') },
-  { href: `/${lang}/work-packages/`, label: t('nav.workPackages') },
-  { href: `/${lang}/news/`, label: t('nav.news') },
-  { href: `/${lang}/resources/`, label: t('nav.resources') },
-  { href: `/${lang}/contact/`, label: t('nav.contact') }
+  { href: `${base}/${lang}/`, label: t('nav.home') },
+  { href: `${base}/${lang}/about/`, label: t('nav.about') },
+  { href: `${base}/${lang}/partners/`, label: t('nav.partners') },
+  { href: `${base}/${lang}/work-packages/`, label: t('nav.workPackages') },
+  { href: `${base}/${lang}/news/`, label: t('nav.news') },
+  { href: `${base}/${lang}/resources/`, label: t('nav.resources') },
+  { href: `${base}/${lang}/contact/`, label: t('nav.contact') }
 ]
 
 function isActive(href: string): boolean {
   // Home page - exact match only
-  if (href === `/${lang}/`) {
-    return currentPath === `/${lang}` || currentPath === `/${lang}/`
+  if (href === `${base}/${lang}/`) {
+    return currentPath === `${base}/${lang}` || currentPath === `${base}/${lang}/`
   }
   // Other pages - check if current path starts with href
   return currentPath.startsWith(href)
@@ -35,7 +36,7 @@ function isActive(href: string): boolean {
   <nav class="container-wide" aria-label="Main navigation">
     <div class="flex items-center justify-between h-16 md:h-20">
       <!-- Logo -->
-      <a href={`/${lang}/`} class="flex items-center">
+      <a href={`${base}/${lang}/`} class="flex items-center">
         <img src={logo.src} alt="CYCLOS - Youth Cycling for Inclusion" class="h-12 md:h-14 w-auto" />
       </a>
 

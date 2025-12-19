@@ -6,6 +6,7 @@ import assocLogo from '../../assets/assoc.png'
 import cslLogo from '../../assets/cssa.png'
 
 const lang: Language = 'de'
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 const t = useTranslations(lang)
 
 const objectives = [
@@ -53,10 +54,10 @@ function formatDate(date: Date): string {
           {t('home.hero.subtitle')}
         </p>
         <div class="flex flex-wrap gap-4">
-          <a href={`/${lang}/about/`} class="btn bg-lime-500 text-gray-900 hover:bg-lime-400 font-semibold">
+          <a href={`${base}/${lang}/about/`} class="btn bg-lime-500 text-gray-900 hover:bg-lime-400 font-semibold">
             {t('home.hero.cta')}
           </a>
-          <a href={`/${lang}/partners/`} class="btn border-2 border-white text-white hover:bg-white/10">
+          <a href={`${base}/${lang}/partners/`} class="btn border-2 border-white text-white hover:bg-white/10">
             {t('home.partners.viewAll')}
           </a>
         </div>
@@ -139,7 +140,7 @@ function formatDate(date: Date): string {
         ))}
       </div>
       <div class="text-center mt-8">
-        <a href={`/${lang}/partners/`} class="btn-outline">
+        <a href={`${base}/${lang}/partners/`} class="btn-outline">
           {t('home.partners.viewAll')}
         </a>
       </div>
@@ -167,7 +168,7 @@ function formatDate(date: Date): string {
         ))}
       </div>
       <div class="text-center mt-8">
-        <a href={`/${lang}/work-packages/`} class="btn-primary">
+        <a href={`${base}/${lang}/work-packages/`} class="btn-primary">
           {t('home.workPackages.viewAll')}
         </a>
       </div>
@@ -195,7 +196,7 @@ function formatDate(date: Date): string {
                   {formatDate(item.data.date)}
                 </time>
                 <h3 class="text-lg font-semibold mt-2 mb-3">
-                  <a href={`/${lang}/news/`} class="hover:text-blue-500 transition-colors">
+                  <a href={`${base}/${lang}/news/`} class="hover:text-blue-500 transition-colors">
                     {item.data.title}
                   </a>
                 </h3>
@@ -210,7 +211,7 @@ function formatDate(date: Date): string {
         </div>
       )}
       <div class="text-center mt-8">
-        <a href={`/${lang}/news/`} class="btn-outline">
+        <a href={`${base}/${lang}/news/`} class="btn-outline">
           {t('home.news.viewAll')}
         </a>
       </div>
@@ -224,7 +225,7 @@ function formatDate(date: Date): string {
       <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
         Unterstützen Sie uns bei der Förderung sozialer Inklusion durch Radfahren. Kontaktieren Sie das Projektteam, um mehr zu erfahren.
       </p>
-      <a href={`/${lang}/contact/`} class="btn bg-white text-lime-700 hover:bg-lime-50">
+      <a href={`${base}/${lang}/contact/`} class="btn bg-white text-lime-700 hover:bg-lime-50">
         {t('nav.contact')}
       </a>
     </div>
