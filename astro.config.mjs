@@ -2,8 +2,7 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  site: "https://cyclos-erasmus-project.github.io",
-  base: "/website",
+  site: "https://cyclos-project.eu",
   integrations: [tailwind()],
   trailingSlash: "always",
   i18n: {
