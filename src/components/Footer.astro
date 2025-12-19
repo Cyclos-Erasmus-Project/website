@@ -16,23 +16,13 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '')
   <div class="bg-blue-900 py-6">
     <div class="container-wide">
       <div class="flex flex-col md:flex-row items-center gap-6">
-        <!-- EU Flag -->
+        <!-- EU Flag and Erasmus+ Logo -->
         <div class="flex-shrink-0">
-          <svg class="w-16 h-12" viewBox="0 0 810 540" xmlns="http://www.w3.org/2000/svg" aria-label="European Union Flag">
-            <rect fill="#039" width="810" height="540"/>
-            <g fill="#FC0">
-              {[0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330].map((angle) => (
-                <g transform={`translate(405 270) rotate(${angle})`}>
-                  <polygon points="0,-120 10.4,-36.9 97.1,-73.9 51.2,-14.9 111.8,39.9 34.9,30.7 0,120 -34.9,30.7 -111.8,39.9 -51.2,-14.9 -97.1,-73.9 -10.4,-36.9" transform="scale(0.15)"/>
-                </g>
-              ))}
-            </g>
-          </svg>
-        </div>
-
-        <!-- Erasmus+ Logo placeholder -->
-        <div class="flex-shrink-0 bg-white px-3 py-1 rounded">
-          <span class="text-blue-900 font-bold text-sm">ERASMUS+</span>
+          <img
+            src={`${base}/images/flag-erasmus.png`}
+            alt="Co-funded by the European Union - Erasmus+ Programme"
+            class="h-16 w-auto"
+          />
         </div>
 
         <!-- Disclaimer -->
