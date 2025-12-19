@@ -5,6 +5,7 @@ import { getCollection } from 'astro:content'
 import assocLogo from '../../assets/assoc.png'
 import cslLogo from '../../assets/cssa.png'
 import afisLogo from '../../assets/afis.png'
+import flvsLogo from '../../assets/vif.png'
 
 const lang: Language = 'fr'
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
@@ -18,7 +19,7 @@ const objectives = [
 ]
 
 const partners = [
-  { name: 'FLVS', fullName: 'Fédérons Les Villes pour la Santé', country: 'France', lead: true, logo: null },
+  { name: 'FLVS', fullName: 'Fédérons Les Villes pour la Santé', country: 'France', lead: true, logo: flvsLogo.src },
   { name: 'ASSOC', fullName: 'Asociatia Profesionala Neguvernamentala de Asistenta Sociala', country: 'Romania', lead: false, logo: assocLogo.src },
   { name: 'AFIS', fullName: 'Austrian Forum for Integration and Sustainability', country: 'Autriche', lead: false, logo: null },
   { name: 'CSL', fullName: 'Computer Solutions SA', country: 'Greece', lead: false, logo: cslLogo.src }
