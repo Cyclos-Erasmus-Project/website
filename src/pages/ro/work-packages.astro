@@ -1,0 +1,256 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { useTranslations, type Language } from '../../i18n/translations'
+
+const lang: Language = 'ro'
+const t = useTranslations(lang)
+
+const workPackages = [
+  {
+    id: 1,
+    title: t('wp.wp1.title'),
+    description: t('wp.wp1.desc'),
+    budget: '€45,900',
+    lead: 'FLVS (France)',
+    color: 'primary',
+    activities: [
+      'Project coordination and partner communication',
+      'Quality assurance and monitoring',
+      'Financial management and reporting',
+      'Risk management and mitigation',
+      'Partnership meetings organization'
+    ],
+    deliverables: [
+      'Project management plan',
+      'Quality assurance framework',
+      'Progress reports',
+      'Final project report'
+    ]
+  },
+  {
+    id: 2,
+    title: t('wp.wp2.title'),
+    description: t('wp.wp2.desc'),
+    budget: '€52,850',
+    lead: 'ASSOC (Romania)',
+    color: 'secondary',
+    activities: [
+      'Research on cycling and social inclusion',
+      'Needs assessment of target groups',
+      'Development of training content',
+      'Creation of educational guide',
+      'Peer review and validation'
+    ],
+    deliverables: [
+      'Needs assessment report',
+      'Educational guide (5 languages)',
+      'Training modules',
+      'Best practices compilation'
+    ]
+  },
+  {
+    id: 3,
+    title: t('wp.wp3.title'),
+    description: t('wp.wp3.desc'),
+    budget: '€53,400',
+    lead: 'AFIS (Austria)',
+    color: 'primary',
+    activities: [
+      'Pilot cycling sessions with youth',
+      'Training workshops for professionals',
+      'Practical skill-building activities',
+      'Safety and maintenance training',
+      'Environmental awareness sessions'
+    ],
+    deliverables: [
+      'Pilot session reports',
+      'Professional training curriculum',
+      'Participant feedback analysis',
+      'Methodology guidelines'
+    ]
+  },
+  {
+    id: 4,
+    title: t('wp.wp4.title'),
+    description: t('wp.wp4.desc'),
+    budget: '€50,420',
+    lead: 'Computer Solutions SA (Greece)',
+    color: 'secondary',
+    activities: [
+      'Platform design and development',
+      'E-learning module creation',
+      'Gamification elements',
+      'Multilingual content integration',
+      'User testing and refinement'
+    ],
+    deliverables: [
+      'Digital learning platform',
+      'Mobile-friendly application',
+      'Interactive learning modules',
+      'User documentation'
+    ]
+  },
+  {
+    id: 5,
+    title: t('wp.wp5.title'),
+    description: t('wp.wp5.desc'),
+    budget: '€47,430',
+    lead: 'FLVS (France)',
+    color: 'primary',
+    activities: [
+      'Communication strategy development',
+      'Website and social media management',
+      'Dissemination events organization',
+      'Final conference',
+      'Impact evaluation'
+    ],
+    deliverables: [
+      'Communication plan',
+      'Project website',
+      'Promotional materials',
+      'Evaluation report',
+      'Policy recommendations'
+    ]
+  }
+]
+---
+
+<BaseLayout title={t('nav.workPackages')} lang={lang}>
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-16 md:py-24">
+    <div class="container-wide">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">{t('wp.title')}</h1>
+      <p class="text-xl text-blue-100 max-w-3xl">
+        {t('wp.subtitle')}
+      </p>
+    </div>
+  </section>
+
+  <!-- Overview Cards -->
+  <section class="section-alt">
+    <div class="container-wide">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        {workPackages.map((wp) => (
+          <a href={`#wp${wp.id}`} class="card p-4 text-center hover:shadow-lg transition-all hover:-translate-y-1">
+            <div class:list={[
+              'w-12 h-12 mx-auto mb-3 rounded-full flex items-center justify-center text-white font-bold',
+              wp.color === 'primary' ? 'bg-lime-600' : 'bg-blue-600'
+            ]}>
+              {wp.id}
+            </div>
+            <h3 class="font-semibold text-sm">WP{wp.id}</h3>
+            <p class="text-xs text-gray-500 mt-1">{wp.budget}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Work Packages -->
+  <section class="section">
+    <div class="container-wide space-y-12">
+      {workPackages.map((wp) => (
+        <div id={`wp${wp.id}`} class="scroll-mt-24">
+          <div class:list={[
+            'card overflow-hidden border-l-4',
+            wp.color === 'primary' ? 'border-lime-500' : 'border-blue-500'
+          ]}>
+            <div class="p-8">
+              <div class="flex flex-wrap items-start justify-between gap-4 mb-6">
+                <div class="flex items-center">
+                  <div class:list={[
+                    'w-14 h-14 rounded-full flex items-center justify-center text-white font-bold text-xl mr-4',
+                    wp.color === 'primary' ? 'bg-lime-600' : 'bg-blue-600'
+                  ]}>
+                    {wp.id}
+                  </div>
+                  <div>
+                    <h2 class="text-2xl font-bold">{wp.title}</h2>
+                    <p class="text-gray-500">Led by {wp.lead}</p>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <p class="text-2xl font-bold text-lime-600">{wp.budget}</p>
+                  <p class="text-sm text-gray-500">Budget allocation</p>
+                </div>
+              </div>
+
+              <p class="text-gray-600 mb-8">{wp.description}</p>
+
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 class="font-semibold text-lg mb-4 flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-lime-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                    </svg>
+                    Key Activities
+                  </h3>
+                  <ul class="space-y-2">
+                    {wp.activities.map((activity) => (
+                      <li class="flex items-start">
+                        <svg class="w-5 h-5 mr-2 text-green-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span class="text-gray-600">{activity}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-lg mb-4 flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Deliverables
+                  </h3>
+                  <ul class="space-y-2">
+                    {wp.deliverables.map((deliverable) => (
+                      <li class="flex items-start">
+                        <svg class="w-5 h-5 mr-2 text-blue-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                        <span class="text-gray-600">{deliverable}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Budget Overview -->
+  <section class="section-alt">
+    <div class="container-narrow">
+      <h2 class="text-center mb-8">Budget Overview</h2>
+      <div class="card p-8">
+        <div class="space-y-4">
+          {workPackages.map((wp) => (
+            <div class="flex items-center">
+              <span class="w-20 text-sm font-medium">WP{wp.id}</span>
+              <div class="flex-grow mx-4">
+                <div class="h-6 bg-gray-100 rounded-full overflow-hidden">
+                  <div
+                    class:list={[
+                      'h-full rounded-full',
+                      wp.color === 'primary' ? 'bg-lime-500' : 'bg-blue-500'
+                    ]}
+                    style={`width: ${(parseFloat(wp.budget.replace('€', '').replace(',', '')) / 250000 * 100).toFixed(1)}%`}
+                  ></div>
+                </div>
+              </div>
+              <span class="w-24 text-right text-sm font-medium">{wp.budget}</span>
+            </div>
+          ))}
+        </div>
+        <div class="border-t mt-6 pt-6 flex justify-between items-center">
+          <span class="font-bold text-lg">Total Project Budget</span>
+          <span class="font-bold text-2xl text-lime-600">€250,000</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

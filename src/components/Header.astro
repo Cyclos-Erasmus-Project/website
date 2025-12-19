@@ -1,0 +1,111 @@
+---
+import { type Language, languages, useTranslations } from '../i18n/translations'
+import LanguageSwitcher from './LanguageSwitcher.astro'
+import logo from '../assets/logo.jpg'
+
+interface Props {
+  lang: Language
+  currentPath: string
+}
+
+const { lang, currentPath } = Astro.props
+const t = useTranslations(lang)
+
+const navItems = [
+  { href: `/${lang}/`, label: t('nav.home') },
+  { href: `/${lang}/about/`, label: t('nav.about') },
+  { href: `/${lang}/partners/`, label: t('nav.partners') },
+  { href: `/${lang}/work-packages/`, label: t('nav.workPackages') },
+  { href: `/${lang}/news/`, label: t('nav.news') },
+  { href: `/${lang}/resources/`, label: t('nav.resources') },
+  { href: `/${lang}/contact/`, label: t('nav.contact') }
+]
+
+function isActive(href: string): boolean {
+  // Home page - exact match only
+  if (href === `/${lang}/`) {
+    return currentPath === `/${lang}` || currentPath === `/${lang}/`
+  }
+  // Other pages - check if current path starts with href
+  return currentPath.startsWith(href)
+}
+---
+
+<header class="bg-white shadow-sm sticky top-0 z-40">
+  <nav class="container-wide" aria-label="Main navigation">
+    <div class="flex items-center justify-between h-16 md:h-20">
+      <!-- Logo -->
+      <a href={`/${lang}/`} class="flex items-center">
+        <img src={logo.src} alt="CYCLOS - Youth Cycling for Inclusion" class="h-12 md:h-14 w-auto" />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden lg:flex items-center space-x-1">
+        {navItems.map((item) => (
+          <a
+            href={item.href}
+            class:list={[
+              'px-3 py-2 rounded-lg text-sm font-medium transition-colors',
+              isActive(item.href)
+                ? 'bg-lime-100 text-lime-700'
+                : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+            ]}
+            aria-current={isActive(item.href) ? 'page' : undefined}
+          >
+            {item.label}
+          </a>
+        ))}
+      </div>
+
+      <!-- Language Switcher & Mobile Menu Button -->
+      <div class="flex items-center space-x-2">
+        <LanguageSwitcher lang={lang} currentPath={currentPath} />
+
+        <!-- Mobile Menu Button -->
+        <button
+          type="button"
+          class="lg:hidden p-2 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          id="mobile-menu-button"
+        >
+          <span class="sr-only">{t('nav.menu')}</span>
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="lg:hidden hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-4 space-y-1 border-t">
+        {navItems.map((item) => (
+          <a
+            href={item.href}
+            class:list={[
+              'block px-3 py-2 rounded-lg text-base font-medium',
+              isActive(item.href)
+                ? 'bg-lime-100 text-lime-700'
+                : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
+            ]}
+            aria-current={isActive(item.href) ? 'page' : undefined}
+          >
+            {item.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const button = document.getElementById('mobile-menu-button')
+  const menu = document.getElementById('mobile-menu')
+
+  button?.addEventListener('click', () => {
+    const expanded = button.getAttribute('aria-expanded') === 'true'
+    button.setAttribute('aria-expanded', (!expanded).toString())
+    menu?.classList.toggle('hidden')
+  })
+</script>

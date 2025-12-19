@@ -1,0 +1,77 @@
+---
+import { type Language, languages } from '../i18n/translations'
+
+interface Props {
+  lang: Language
+  currentPath: string
+}
+
+const { lang, currentPath } = Astro.props
+
+function getLocalizedPath(targetLang: Language): string {
+  // Replace current language in path with target language
+  const pathParts = currentPath.split('/')
+  if (pathParts[1] && pathParts[1] in languages) {
+    pathParts[1] = targetLang
+  } else {
+    pathParts.splice(1, 0, targetLang)
+  }
+  return pathParts.join('/') || `/${targetLang}`
+}
+---
+
+<div class="relative" id="language-switcher">
+  <button
+    type="button"
+    class="flex items-center space-x-1 px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 rounded-lg hover:bg-gray-100"
+    aria-expanded="false"
+    aria-haspopup="true"
+    id="language-button"
+  >
+    <span class="uppercase">{lang}</span>
+    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+  </button>
+
+  <div
+    class="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-lg border hidden z-50"
+    id="language-dropdown"
+    role="menu"
+    aria-orientation="vertical"
+  >
+    {Object.entries(languages).map(([code, name]) => (
+      <a
+        href={getLocalizedPath(code as Language)}
+        class:list={[
+          'block px-4 py-2 text-sm hover:bg-gray-100 first:rounded-t-lg last:rounded-b-lg',
+          code === lang ? 'bg-lime-50 text-lime-700 font-medium' : 'text-gray-700'
+        ]}
+        role="menuitem"
+        aria-current={code === lang ? 'true' : undefined}
+      >
+        {name}
+      </a>
+    ))}
+  </div>
+</div>
+
+<script>
+  const button = document.getElementById('language-button')
+  const dropdown = document.getElementById('language-dropdown')
+
+  button?.addEventListener('click', () => {
+    const expanded = button.getAttribute('aria-expanded') === 'true'
+    button.setAttribute('aria-expanded', (!expanded).toString())
+    dropdown?.classList.toggle('hidden')
+  })
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    const switcher = document.getElementById('language-switcher')
+    if (!switcher?.contains(e.target as Node)) {
+      button?.setAttribute('aria-expanded', 'false')
+      dropdown?.classList.add('hidden')
+    }
+  })
+</script>

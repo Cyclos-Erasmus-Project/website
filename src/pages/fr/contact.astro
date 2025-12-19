@@ -1,0 +1,211 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { useTranslations, type Language } from '../../i18n/translations'
+
+const lang: Language = 'fr'
+const t = useTranslations(lang)
+
+const partners = [
+  {
+    name: 'FLVS',
+    fullName: 'Fédérons Les Villes pour la Santé',
+    country: 'France',
+    city: 'Saint-André-Lez-Lille',
+    lead: true,
+    email: 'contact@vivonsenforme.org',
+    website: null
+  },
+  {
+    name: 'ASSOC',
+    fullName: 'Asociatia Profesionala Neguvernamentala de Asistenta Sociala',
+    country: 'Romania',
+    city: 'Baia Mare',
+    lead: false,
+    email: 'office@assoc.ro',
+    website: 'https://www.assoc.ro'
+  },
+  {
+    name: 'AFIS',
+    fullName: 'Austrian Forum for Integration and Sustainability',
+    country: 'Austria',
+    city: 'Vienna',
+    lead: false,
+    email: 'info@oefis.org',
+    website: 'https://www.oefis.org'
+  },
+  {
+    name: 'Computer Solutions SA',
+    fullName: 'Computer Solutions SA',
+    country: 'Greece',
+    city: 'Athens',
+    lead: false,
+    email: 'info@csl.gr',
+    website: 'https://www.csl.gr'
+  }
+]
+
+const leadPartner = partners.find(p => p.lead)
+const otherPartners = partners.filter(p => !p.lead)
+---
+
+<BaseLayout title={t('nav.contact')} lang={lang}>
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-16 md:py-24">
+    <div class="container-wide">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">{t('contact.title')}</h1>
+      <p class="text-xl text-blue-100 max-w-3xl">
+        {t('contact.subtitle')}
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Information -->
+  <section class="section">
+    <div class="container-wide">
+      <div class="grid lg:grid-cols-3 gap-8">
+        <!-- Lead Partner - Featured -->
+        <div class="lg:col-span-2">
+          <h2 class="text-2xl font-bold mb-6">{t('contact.lead.title')}</h2>
+          {leadPartner && (
+            <div class="card p-8 bg-gradient-to-br from-lime-50 to-blue-50 border-2 border-lime-200">
+              <div class="flex flex-col md:flex-row gap-6">
+                <div class="flex-shrink-0">
+                  <div class="w-24 h-24 bg-lime-600 rounded-full flex items-center justify-center text-white">
+                    <span class="text-3xl font-bold">{leadPartner.name.charAt(0)}</span>
+                  </div>
+                </div>
+                <div class="flex-grow">
+                  <h3 class="text-2xl font-bold text-lime-700 mb-1">{leadPartner.name}</h3>
+                  <p class="text-gray-600 mb-4">{leadPartner.fullName}</p>
+
+                  <div class="space-y-3">
+                    <div class="flex items-center text-gray-700">
+                      <svg class="w-5 h-5 mr-3 text-lime-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      {leadPartner.city}, {leadPartner.country}
+                    </div>
+                    <div class="flex items-center">
+                      <svg class="w-5 h-5 mr-3 text-lime-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                      <a href={`mailto:${leadPartner.email}`} class="text-lime-600 hover:text-lime-700 font-medium">
+                        {leadPartner.email}
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="mt-6">
+                    <a href={`mailto:${leadPartner.email}?subject=CYCLOS Project Inquiry`} class="btn-primary">
+                      <svg class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                      Send Email
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+
+        <!-- Quick Contact Info -->
+        <div>
+          <h2 class="text-2xl font-bold mb-6">Get in Touch</h2>
+          <div class="card p-6 space-y-6">
+            <div>
+              <h3 class="font-semibold text-gray-900 mb-2">General Inquiries</h3>
+              <p class="text-gray-600 text-sm">For questions about the CYCLOS project, please contact the lead partner.</p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-900 mb-2">Media & Press</h3>
+              <p class="text-gray-600 text-sm">For media inquiries and press requests, please reach out to the project coordinator.</p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-900 mb-2">Partnership Opportunities</h3>
+              <p class="text-gray-600 text-sm">Interested in collaborating? Contact us to discuss potential partnerships.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner Organizations -->
+  <section class="section-alt">
+    <div class="container-wide">
+      <h2 class="text-2xl font-bold mb-8 text-center">{t('contact.partners.title')}</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        {otherPartners.map((partner) => (
+          <div class="card p-6">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                <span class="text-xl font-bold text-blue-600">{partner.name.charAt(0)}</span>
+              </div>
+              <div>
+                <h3 class="font-semibold">{partner.name}</h3>
+                <p class="text-sm text-gray-500">{partner.country}</p>
+              </div>
+            </div>
+            <p class="text-sm text-gray-600 mb-4">{partner.fullName}</p>
+            <div class="space-y-2 text-sm">
+              <div class="flex items-center text-gray-600">
+                <svg class="w-4 h-4 mr-2 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                </svg>
+                {partner.city}
+              </div>
+              <a href={`mailto:${partner.email}`} class="flex items-center text-lime-600 hover:text-lime-700">
+                <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                {partner.email}
+              </a>
+              {partner.website && (
+                <a href={partner.website} target="_blank" rel="noopener noreferrer" class="flex items-center text-lime-600 hover:text-lime-700">
+                  <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                  </svg>
+                  {t('partners.website')}
+                </a>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Map placeholder -->
+  <section class="section">
+    <div class="container-wide">
+      <h2 class="text-2xl font-bold mb-8 text-center">Our European Network</h2>
+      <div class="card p-8 bg-gradient-to-br from-blue-50 to-lime-50">
+        <div class="text-center">
+          <div class="inline-flex items-center justify-center space-x-8 flex-wrap gap-4">
+            <div class="flex items-center">
+              <span class="w-3 h-3 bg-lime-600 rounded-full mr-2"></span>
+              <span class="font-medium">France</span>
+            </div>
+            <div class="flex items-center">
+              <span class="w-3 h-3 bg-blue-600 rounded-full mr-2"></span>
+              <span class="font-medium">Romania</span>
+            </div>
+            <div class="flex items-center">
+              <span class="w-3 h-3 bg-green-600 rounded-full mr-2"></span>
+              <span class="font-medium">Austria</span>
+            </div>
+            <div class="flex items-center">
+              <span class="w-3 h-3 bg-blue-600 rounded-full mr-2"></span>
+              <span class="font-medium">Greece</span>
+            </div>
+          </div>
+          <p class="text-gray-600 mt-4">
+            Four countries working together for youth inclusion through cycling
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

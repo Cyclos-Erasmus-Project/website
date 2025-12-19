@@ -1,0 +1,98 @@
+---
+import { type Language, useTranslations } from '../i18n/translations'
+
+interface Props {
+  lang: Language
+}
+
+const { lang } = Astro.props
+const t = useTranslations(lang)
+const currentYear = new Date().getFullYear()
+---
+
+<footer class="bg-gray-900 text-white">
+  <!-- EU Funding Banner -->
+  <div class="bg-blue-900 py-6">
+    <div class="container-wide">
+      <div class="flex flex-col md:flex-row items-center gap-6">
+        <!-- EU Flag -->
+        <div class="flex-shrink-0">
+          <svg class="w-16 h-12" viewBox="0 0 810 540" xmlns="http://www.w3.org/2000/svg" aria-label="European Union Flag">
+            <rect fill="#039" width="810" height="540"/>
+            <g fill="#FC0">
+              {[0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330].map((angle) => (
+                <g transform={`translate(405 270) rotate(${angle})`}>
+                  <polygon points="0,-120 10.4,-36.9 97.1,-73.9 51.2,-14.9 111.8,39.9 34.9,30.7 0,120 -34.9,30.7 -111.8,39.9 -51.2,-14.9 -97.1,-73.9 -10.4,-36.9" transform="scale(0.15)"/>
+                </g>
+              ))}
+            </g>
+          </svg>
+        </div>
+
+        <!-- Erasmus+ Logo placeholder -->
+        <div class="flex-shrink-0 bg-white px-3 py-1 rounded">
+          <span class="text-blue-900 font-bold text-sm">ERASMUS+</span>
+        </div>
+
+        <!-- Disclaimer -->
+        <p class="text-sm text-blue-100 flex-grow">
+          {t('footer.disclaimer')}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Footer -->
+  <div class="container-wide py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- About -->
+      <div>
+        <div class="flex items-center space-x-2 mb-4">
+          <span class="font-bold text-xl text-lime-400">CYCLOS</span>
+        </div>
+        <p class="text-gray-400 text-sm">
+          {t('home.hero.subtitle')}
+        </p>
+        <p class="text-lime-400 text-sm mt-2 font-medium">
+          {t('footer.project')}
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="font-semibold text-lg mb-4">{t('nav.home')}</h3>
+        <ul class="space-y-2">
+          <li><a href={`/${lang}/about/`} class="text-gray-400 hover:text-white transition-colors">{t('nav.about')}</a></li>
+          <li><a href={`/${lang}/partners/`} class="text-gray-400 hover:text-white transition-colors">{t('nav.partners')}</a></li>
+          <li><a href={`/${lang}/work-packages/`} class="text-gray-400 hover:text-white transition-colors">{t('nav.workPackages')}</a></li>
+          <li><a href={`/${lang}/news/`} class="text-gray-400 hover:text-white transition-colors">{t('nav.news')}</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div>
+        <h3 class="font-semibold text-lg mb-4">{t('nav.resources')}</h3>
+        <ul class="space-y-2">
+          <li><a href={`/${lang}/resources/`} class="text-gray-400 hover:text-white transition-colors">{t('nav.resources')}</a></li>
+          <li><a href={`/${lang}/contact/`} class="text-gray-400 hover:text-white transition-colors">{t('nav.contact')}</a></li>
+        </ul>
+      </div>
+
+      <!-- Partners -->
+      <div>
+        <h3 class="font-semibold text-lg mb-4">{t('nav.partners')}</h3>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li>FLVS (France)</li>
+          <li>ASSOC (Romania)</li>
+          <li>AFIS (Austria)</li>
+          <li>Computer Solutions SA (Greece)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+      <p>&copy; {currentYear} CYCLOS. {t('footer.rights')}</p>
+    </div>
+  </div>
+</footer>

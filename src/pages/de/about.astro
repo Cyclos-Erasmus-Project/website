@@ -1,0 +1,152 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { useTranslations, type Language } from '../../i18n/translations'
+
+const lang: Language = 'de'
+const t = useTranslations(lang)
+
+const objectives = [
+  'Promote the social inclusion of disadvantaged young people through cycling',
+  'Raise environmental awareness and encourage greener mobility choices',
+  'Help youth become more autonomous and independent in their daily lives',
+  'Boost skills, self-confidence, and employability',
+  'Equip youth workers with tools to organize inclusive cycling sessions',
+  'Develop a digital platform for learning and awareness'
+]
+
+const targetGroups = [
+  { icon: 'users', title: t('about.target.youth'), desc: 'Young people with disabilities, migrant backgrounds, or from low socioeconomic situations' },
+  { icon: 'briefcase', title: t('about.target.workers'), desc: 'Professionals organizing activities for disadvantaged youth' },
+  { icon: 'building', title: t('about.target.stakeholders'), desc: 'Organizations working on youth inclusion and sustainable mobility' }
+]
+---
+
+<BaseLayout title={t('nav.about')} lang={lang}>
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-16 md:py-24">
+    <div class="container-wide">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">{t('about.title')}</h1>
+      <p class="text-xl text-blue-100 max-w-3xl">
+        {t('about.background.text')}
+      </p>
+    </div>
+  </section>
+
+  <!-- Project Overview -->
+  <section class="section">
+    <div class="container-narrow">
+      <h2 class="mb-8">{t('about.background.title')}</h2>
+      <div class="prose prose-lg max-w-none text-gray-600">
+        <p>
+          CYCLOS (Youth Cycling for Inclusion) is an ERASMUS+ KA220-YOU Cooperation Partnership that brings together four organizations from France, Romania, Austria, and Greece. The project addresses a critical challenge: many disadvantaged young people face barriers to employment and social integration, with mobility being a significant obstacle.
+        </p>
+        <p>
+          By focusing on cycling as a tool for inclusion, CYCLOS aims to help these young people overcome mobility barriers, develop practical skills, build confidence, and become more autonomous. At the same time, the project promotes environmental awareness and sustainable transportation practices.
+        </p>
+        <p>
+          The project will develop educational materials, organize practical cycling sessions, create a digital learning platform, and provide training for youth workers across the partner countries.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Objectives -->
+  <section class="section-alt">
+    <div class="container-wide">
+      <h2 class="text-center mb-12">{t('about.objectives.title')}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {objectives.map((objective, index) => (
+          <div class="card p-6 flex items-start">
+            <span class="flex-shrink-0 w-8 h-8 bg-lime-100 text-lime-700 rounded-full flex items-center justify-center font-bold mr-4">
+              {index + 1}
+            </span>
+            <p class="text-gray-700">{objective}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="section">
+    <div class="container-narrow">
+      <h2 class="text-center mb-12">{t('about.timeline.title')}</h2>
+      <div class="relative">
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-lime-200"></div>
+        <div class="space-y-12">
+          <div class="relative flex items-center">
+            <div class="flex-1 text-right pr-8">
+              <h3 class="font-semibold text-lg">{t('about.timeline.start')}</h3>
+              <p class="text-lime-600 font-bold text-xl">September 2025</p>
+            </div>
+            <div class="w-4 h-4 bg-lime-600 rounded-full z-10"></div>
+            <div class="flex-1 pl-8"></div>
+          </div>
+          <div class="relative flex items-center">
+            <div class="flex-1 text-right pr-8"></div>
+            <div class="w-4 h-4 bg-lime-400 rounded-full z-10"></div>
+            <div class="flex-1 pl-8">
+              <h3 class="font-semibold text-lg">{t('about.timeline.duration')}</h3>
+              <p class="text-gray-600">of collaborative work</p>
+            </div>
+          </div>
+          <div class="relative flex items-center">
+            <div class="flex-1 text-right pr-8">
+              <h3 class="font-semibold text-lg">{t('about.timeline.end')}</h3>
+              <p class="text-lime-600 font-bold text-xl">February 2028</p>
+            </div>
+            <div class="w-4 h-4 bg-lime-600 rounded-full z-10"></div>
+            <div class="flex-1 pl-8"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Target Audience -->
+  <section class="section-alt">
+    <div class="container-wide">
+      <h2 class="text-center mb-12">{t('about.target.title')}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {targetGroups.map((group) => (
+          <div class="card p-8 text-center">
+            <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+              {group.icon === 'users' && (
+                <svg class="w-8 h-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              )}
+              {group.icon === 'briefcase' && (
+                <svg class="w-8 h-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              )}
+              {group.icon === 'building' && (
+                <svg class="w-8 h-8 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                </svg>
+              )}
+            </div>
+            <h3 class="font-semibold text-lg mb-2">{group.title}</h3>
+            <p class="text-gray-600">{group.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Funding Info -->
+  <section class="section bg-blue-50">
+    <div class="container-narrow text-center">
+      <div class="flex justify-center mb-6">
+        <div class="bg-white px-4 py-2 rounded-lg shadow-sm">
+          <span class="text-blue-900 font-bold">ERASMUS+</span>
+        </div>
+      </div>
+      <h2 class="text-2xl font-bold mb-4">Funded by the European Union</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        CYCLOS is a Cooperation Partnership funded under the ERASMUS+ Programme (KA220-YOU) with a total budget of €250,000. The project is coordinated by FLVS (France) in partnership with organizations from Romania, Austria, and Greece.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
