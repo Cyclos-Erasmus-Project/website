@@ -11,7 +11,9 @@
 Computer Solutions SA is pleased to announce the successful development and release of the first version of the official CYCLOS project website. This static website serves as the primary public-facing platform for the CYCLOS ERASMUS+ KA220-YOU Cooperation Partnership project, which promotes the social inclusion of disadvantaged young people through cycling.
 
 The website is now live and accessible at:  
-**https://cyclos-erasmus-project.github.io/website/**
+**https://cyclos-project.eu**
+
+The domain `cyclos-project.eu` was purchased by Computer Solutions SA for a 2-year period to provide a professional, memorable URL for the project.
 
 ---
 
@@ -443,20 +445,32 @@ The CYCLOS website has been developed using a mobile-first responsive design met
 | Setting | Value |
 |---------|-------|
 | **Platform** | GitHub Pages |
-| **Site URL** | https://cyclos-erasmus-project.github.io |
-| **Base Path** | /website |
+| **Custom Domain** | cyclos-project.eu |
+| **Site URL** | https://cyclos-project.eu |
 | **SSL/TLS** | Enabled (HTTPS) |
+| **Domain Registration** | 2 years (purchased by Computer Solutions SA) |
+
+### CI/CD Pipeline
+
+The website features a fully automated Continuous Integration/Continuous Deployment (CI/CD) pipeline:
+
+- **Trigger**: Every push to the `main` branch
+- **Build**: Automatic Astro build process
+- **Deployment**: Automatic deployment to GitHub Pages production environment
+- **Technology**: GitHub Actions workflow
+
+This automation ensures that any content or code changes are immediately reflected on the live website without manual intervention.
 
 ### URL Structure
 
 ```
-https://cyclos-erasmus-project.github.io/website/{lang}/{page}/
+https://cyclos-project.eu/{lang}/{page}/
 ```
 
 Examples:
-- Homepage (EN): `https://cyclos-erasmus-project.github.io/website/en/`
-- About (FR): `https://cyclos-erasmus-project.github.io/website/fr/about/`
-- Partners (EL): `https://cyclos-erasmus-project.github.io/website/el/partners/`
+- Homepage (EN): `https://cyclos-project.eu/en/`
+- About (FR): `https://cyclos-project.eu/fr/about/`
+- Partners (EL): `https://cyclos-project.eu/el/partners/`
 
 ---
 
