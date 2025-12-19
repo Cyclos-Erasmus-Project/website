@@ -4,6 +4,7 @@ import { useTranslations, type Language } from '../../i18n/translations'
 import { getCollection } from 'astro:content'
 import assocLogo from '../../assets/assoc.png'
 import cslLogo from '../../assets/cssa.png'
+import afisLogo from '../../assets/afis.png'
 
 const lang: Language = 'ro'
 const base = import.meta.env.BASE_URL.replace(/\/$/, '')
@@ -19,7 +20,7 @@ const objectives = [
 const partners = [
   { name: 'FLVS', fullName: 'Fédérons Les Villes pour la Santé', country: 'Franța', lead: true, logo: null },
   { name: 'ASSOC', fullName: 'Asociatia Profesionala Neguvernamentala de Asistenta Sociala', country: 'Romania', lead: false, logo: assocLogo.src },
-  { name: 'AFIS', fullName: 'Austrian Forum for Integration and Sustainability', country: 'Austria', lead: false, logo: null },
+  { name: 'AFIS', fullName: 'Austrian Forum for Integration and Sustainability', country: 'Austria', lead: false, logo: afisLogo.src },
   { name: 'CSL', fullName: 'Computer Solutions SA', country: 'Greece', lead: false, logo: cslLogo.src }
 ]
 
