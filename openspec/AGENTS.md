@@ -454,3 +454,26 @@ openspec archive <change-id> [--yes|-y]  # Mark complete (add --yes for automati
 ```
 
 Remember: Specs are truth. Changes are proposals. Keep them in sync.
+
+## Python Helper Scripts
+
+This project has UV infrastructure for temporary Python helper scripts.
+
+### When to Use
+- Image processing/optimization
+- Data transformation or migration
+- Bulk file operations
+- API interactions for one-time tasks
+- Complex text/content processing
+
+### Usage
+```bash
+uv run scripts/my_script.py                    # Run a script
+uv run --extra helper scripts/my_script.py     # With optional deps (requests, pillow, pyyaml)
+```
+
+### Critical Rules
+1. **Ephemeral only**: Delete scripts after use
+2. **No persistence**: Python code should not remain in the codebase
+3. **Location**: All scripts in `scripts/` directory (gitignored)
+4. **Not for features**: Use Node.js/Astro for anything permanent

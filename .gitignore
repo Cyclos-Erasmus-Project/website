@@ -32,3 +32,14 @@ Thumbs.db
 
 # Debug
 debug/
+
+# Python (UV helper scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+.uv/
+uv.lock
+scripts/*.py
+!scripts/.gitkeep

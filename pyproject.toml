@@ -1,0 +1,32 @@
+# UV Python Infrastructure for Helper Scripts
+#
+# This project is primarily a Node.js/Astro website. Python is used ONLY for
+# temporary helper scripts that accomplish a specific task and are then discarded.
+#
+# Usage:
+#   uv run scripts/my_script.py        # Run a script
+#   uv add <package> --optional helper  # Add a dependency for scripts
+#
+# Guidelines:
+#   - Scripts should be short-lived and task-specific
+#   - Delete scripts after use (scripts/ should normally be empty)
+#   - No Python code should persist in the codebase
+
+[project]
+name = "cyclos-website-helpers"
+version = "0.1.0"
+description = "Temporary helper scripts for CYCLOS website development"
+requires-python = ">=3.13"
+
+# Minimal dependencies - add more as needed with: uv add <package> --optional helper
+dependencies = []
+
+[project.optional-dependencies]
+helper = [
+    "requests>=2.31",
+    "pillow>=10.0",
+    "pyyaml>=6.0",
+]
+
+[dependency-groups]
+dev = []
