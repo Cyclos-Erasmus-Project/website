@@ -106,7 +106,7 @@ public/
 - **Green Mobility**: Environmentally sustainable transportation
 
 ### Visual Identity
-- Project logo available in `logos/` directory
+- Created and useful assests available in `assets/` directory
 - EU ERASMUS+ co-funding acknowledgment required on all pages
 - Partner organization logos to be displayed
 

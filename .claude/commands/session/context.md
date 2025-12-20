@@ -35,6 +35,6 @@ Initialize session context by reviewing the codebase structure, OpenSpec specifi
    - Any pending tasks or blockers noted in proposals
 
 **Reference**
-- When performing file system operations, first try methods for windows systems and assume powershell commands are present.
+- When performing file system operations, when you find an approach that does'nt work, make a mental note to avoid for the rest of the session and try another approach. If you think it is a structural issue, try to amend OpenSpec's directives to always use the right tooling.
 - Use `openspec show <id>` for details on specific changes or specs
 - Consult `openspec/AGENTS.md` for OpenSpec workflow conventions

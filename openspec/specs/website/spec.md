@@ -16,6 +16,7 @@ The website SHALL provide a homepage that communicates the CYCLOS project's purp
 - **WHEN** a user views the homepage
 - **THEN** the system displays logos of all 4 partner organizations
 - **AND** each logo links to the partners page
+- **AND** no placeholder initials are shown when logos are available
 
 ### Requirement: Navigation
 The website SHALL provide consistent navigation across all pages with language switching capability.
@@ -107,6 +108,12 @@ The website SHALL provide a contact page with partner organization contact infor
 - **WHEN** a user navigates to the contact page
 - **THEN** the system displays contact information for the lead partner (FLVS)
 - **AND** the system displays a list of all partner organizations with their contact details
+- **AND** each partner organization displays their official logo
+
+#### Scenario: Partner logos displayed on contact page
+- **WHEN** a user views the contact page
+- **THEN** the system displays the official logo for each partner organization
+- **AND** no placeholder initials are shown when logos are available
 
 ### Requirement: EU Funding Acknowledgment
 The website SHALL display the required EU ERASMUS+ co-funding acknowledgment on all pages.
