@@ -2,6 +2,10 @@
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import { useTranslations, type Language } from '../../i18n/translations'
 import contactImg from '../../assets/contact.png'
+import assocLogo from '../../assets/assoc.png'
+import cslLogo from '../../assets/cssa.png'
+import afisLogo from '../../assets/afis.png'
+import flvsLogo from '../../assets/vif.png'
 
 const lang: Language = 'ro'
 const t = useTranslations(lang)
@@ -14,7 +18,8 @@ const partners = [
     city: 'Saint-André-Lez-Lille',
     lead: true,
     email: 'contact@vivonsenforme.org',
-    website: null
+    website: null,
+    logo: flvsLogo.src
   },
   {
     name: 'ASSOC',
@@ -23,7 +28,8 @@ const partners = [
     city: 'Baia Mare',
     lead: false,
     email: 'office@assoc.ro',
-    website: 'https://www.assoc.ro'
+    website: 'https://www.assoc.ro',
+    logo: assocLogo.src
   },
   {
     name: 'AFIS',
@@ -32,7 +38,8 @@ const partners = [
     city: 'Vienna',
     lead: false,
     email: 'info@oefis.org',
-    website: 'https://www.oefis.org'
+    website: 'https://www.oefis.org',
+    logo: afisLogo.src
   },
   {
     name: 'Computer Solutions SA',
@@ -41,7 +48,8 @@ const partners = [
     city: 'Athens',
     lead: false,
     email: 'info@csl.gr',
-    website: 'https://www.csl.gr'
+    website: 'https://www.csl.gr',
+    logo: cslLogo.src
   }
 ]
 
@@ -75,8 +83,8 @@ const otherPartners = partners.filter(p => !p.lead)
             <div class="card p-8 bg-gradient-to-br from-lime-50 to-blue-50 border-2 border-lime-200">
               <div class="flex flex-col md:flex-row gap-6">
                 <div class="flex-shrink-0">
-                  <div class="w-24 h-24 bg-lime-600 rounded-full flex items-center justify-center text-white">
-                    <span class="text-3xl font-bold">{leadPartner.name.charAt(0)}</span>
+                  <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center overflow-hidden border-2 border-lime-200">
+                    <img src={leadPartner.logo} alt={leadPartner.name} class="w-20 h-20 object-contain" />
                   </div>
                 </div>
                 <div class="flex-grow">
@@ -145,8 +153,8 @@ const otherPartners = partners.filter(p => !p.lead)
         {otherPartners.map((partner) => (
           <div class="card p-6">
             <div class="flex items-center mb-4">
-              <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
-                <span class="text-xl font-bold text-blue-600">{partner.name.charAt(0)}</span>
+              <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 overflow-hidden border border-gray-200">
+                <img src={partner.logo} alt={partner.name} class="w-10 h-10 object-contain" />
               </div>
               <div>
                 <h3 class="font-semibold">{partner.name}</h3>
