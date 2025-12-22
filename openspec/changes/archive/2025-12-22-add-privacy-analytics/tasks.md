@@ -11,6 +11,6 @@
 - [x] 2.3 Script loads async (non-blocking)
 
 ## 3. Verification
-- [ ] 3.1 Test script loads correctly in production build
-- [ ] 3.2 Verify no cookies are set (DevTools → Application → Cookies)
-- [ ] 3.3 Confirm pageviews appear in GoatCounter dashboard
+- [x] 3.1 Test script loads correctly in production build
+- [x] 3.2 Verify no cookies are set (DevTools → Application → Cookies)
+- [x] 3.3 Confirm pageviews appear in GoatCounter dashboard
