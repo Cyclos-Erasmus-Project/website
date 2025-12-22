@@ -162,6 +162,9 @@ New request?
 ```markdown
 # Change: [Brief description of change]
 
+severity: patch | minor | major
+changelog: [Optional one-line summary for CHANGELOG.md]
+
 ## Why
 [1-2 sentences on problem/opportunity]
 
@@ -173,6 +176,15 @@ New request?
 - Affected specs: [list capabilities]
 - Affected code: [key files/systems]
 ```
+
+**Severity field** (for semantic versioning):
+- `major` - Breaking changes (bumps X.0.0)
+- `minor` - New features, no breaking changes (bumps x.Y.0)
+- `patch` - Bug fixes, documentation (bumps x.y.Z, default if omitted)
+
+**Changelog field** (optional):
+- One-line summary for CHANGELOG.md
+- If omitted, the script uses the "# Change:" title
 
 3. **Create spec deltas:** `specs/[capability]/spec.md`
 ```markdown
@@ -455,6 +467,40 @@ openspec archive <change-id> [--yes|-y]  # Mark complete (add --yes for automati
 
 Remember: Specs are truth. Changes are proposals. Keep them in sync.
 
+## Changelog and Release Workflow
+
+This project uses automated changelog generation and semantic versioning.
+
+### Changelog Generation
+```bash
+uv run scripts/generate_changelog.py           # Generate CHANGELOG.md
+uv run scripts/generate_changelog.py --dry-run # Preview without writing
+```
+
+The script:
+1. Reads archived changes from `openspec/changes/archive/`
+2. Extracts "What Changes" or `changelog` field from each proposal.md
+3. Groups entries by git tag version
+4. Outputs CHANGELOG.md in Keep a Changelog format
+
+### Release Workflow
+```bash
+uv run scripts/release.py           # Create new version tag
+uv run scripts/release.py --dry-run # Preview version calculation
+```
+
+The script:
+1. Reads current version from latest git tag
+2. Collects unreleased archived changes and their severities
+3. Calculates next version (highest severity wins: major > minor > patch)
+4. Creates git tag and regenerates CHANGELOG.md
+
+### Workflow Summary
+1. Create and implement change proposals as usual
+2. Archive changes with `openspec archive <id> -y`
+3. When ready to release, run `uv run scripts/release.py`
+4. Push tags: `git push origin --tags`
+
 ## Python Helper Scripts
 
 This project has UV infrastructure for temporary Python helper scripts.
@@ -473,7 +519,7 @@ uv run --extra helper scripts/my_script.py     # With optional deps (requests, p
 ```
 
 ### Critical Rules
-1. **Ephemeral only**: Delete scripts after use
+1. **Ephemeral only**: Delete scripts after use (except changelog/release scripts)
 2. **No persistence**: Python code should not remain in the codebase
 3. **Location**: All scripts in `scripts/` directory (gitignored)
 4. **Not for features**: Use Node.js/Astro for anything permanent

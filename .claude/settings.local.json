@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "SlashCommand(/openspec:archive)"
+      "SlashCommand(/openspec:archive)",
+      "SlashCommand(/openspec:proposal)",
+      "SlashCommand(/openspec:apply)"
     ]
   }
 }

@@ -1,5 +1,7 @@
 # Change: Add Privacy-Preserving Analytics
 
+severity: minor
+
 ## Why
 
 The CYCLOS website needs visitor analytics for EU project reporting and content optimization. As an ERASMUS+ funded project, GDPR compliance is mandatory. Current state has no analytics, limiting our ability to:

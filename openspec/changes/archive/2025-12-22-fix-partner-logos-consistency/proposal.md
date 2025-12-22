@@ -1,5 +1,7 @@
 # Change: Fix Partner Logos Consistency
 
+severity: patch
+
 ## Why
 Partner logos are inconsistently used across the website. Some pages display actual logos while others show placeholder initials or have `logo: null`. This creates an unprofessional appearance and fails to properly represent partner organizations.
 

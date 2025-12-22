@@ -1,5 +1,7 @@
 # Change: Create CYCLOS Static Website
 
+severity: major
+
 ## Why
 
 The CYCLOS ERASMUS+ project requires a public-facing website to communicate its mission, showcase partner organizations, share project results, and provide access to educational resources. This is essential for WP5 (Dissemination) and supports the project's visibility and impact across the 4 partner countries.

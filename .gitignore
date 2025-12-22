@@ -42,4 +42,6 @@ __pycache__/
 .uv/
 uv.lock
 scripts/*.py
+!scripts/generate_changelog.py
+!scripts/release.py
 !scripts/.gitkeep
