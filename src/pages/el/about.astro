@@ -7,29 +7,29 @@ const lang: Language = "el";
 const t = useTranslations(lang);
 
 const objectives = [
-    "Promote the social inclusion of disadvantaged young people through cycling",
-    "Raise environmental awareness and encourage greener mobility choices",
-    "Help youth become more autonomous and independent in their daily lives",
-    "Boost skills, self-confidence, and employability",
-    "Equip youth workers with tools to organize inclusive cycling sessions",
-    "Develop a digital platform for learning and awareness",
+    "Προώθηση της κοινωνικής ένταξης μειονεκτούντων νέων μέσω της ποδηλασίας",
+    "Αύξηση της περιβαλλοντικής ευαισθητοποίησης και ενθάρρυνση πιο πράσινων επιλογών κινητικότητας",
+    "Βοήθεια στους νέους να γίνουν πιο αυτόνομοι και ανεξάρτητοι στην καθημερινή τους ζωή",
+    "Ενίσχυση δεξιοτήτων, αυτοπεποίθησης και απασχολησιμότητας",
+    "Εξοπλισμός των εργαζομένων νεολαίας με εργαλεία για την οργάνωση συνεδριών ποδηλασίας χωρίς αποκλεισμούς",
+    "Ανάπτυξη ψηφιακής πλατφόρμας για μάθηση και ευαισθητοποίηση",
 ];
 
 const targetGroups = [
     {
         icon: "users",
         title: t("about.target.youth"),
-        desc: "Young people with disabilities, migrant backgrounds, or from low socioeconomic situations",
+        desc: "Νέοι με αναπηρίες, μεταναστευτικό υπόβαθρο ή από χαμηλές κοινωνικοοικονομικές συνθήκες",
     },
     {
         icon: "briefcase",
         title: t("about.target.workers"),
-        desc: "Professionals organizing activities for disadvantaged youth",
+        desc: "Επαγγελματίες που οργανώνουν δραστηριότητες για μειονεκτούντες νέους",
     },
     {
         icon: "building",
         title: t("about.target.stakeholders"),
-        desc: "Organizations working on youth inclusion and sustainable mobility",
+        desc: "Οργανισμοί που εργάζονται για την ένταξη των νέων και τη βιώσιμη κινητικότητα",
     },
 ];
 ---
@@ -64,26 +64,27 @@ const targetGroups = [
             <h2 class="mb-8">{t("about.background.title")}</h2>
             <div class="prose prose-lg max-w-none text-gray-600">
                 <p>
-                    CYCLOS (Youth Cycling for Inclusion) is an ERASMUS+
-                    KA220-YOU Cooperation Partnership that brings together four
-                    organizations from France, Romania, Austria, and Greece. The
-                    project addresses a critical challenge: many disadvantaged
-                    young people face barriers to employment and social
-                    integration, with mobility being a significant obstacle.
+                    Το CYCLOS (Youth Cycling for Inclusion) είναι μια Σύμπραξη
+                    Συνεργασίας ERASMUS+ KA220-YOU που φέρνει κοντά τέσσερις
+                    οργανισμούς από τη Γαλλία, τη Ρουμανία, την Αυστρία και την
+                    Ελλάδα. Το έργο αντιμετωπίζει μια κρίσιμη πρόκληση: πολλοί
+                    μειονεκτούντες νέοι αντιμετωπίζουν εμπόδια στην απασχόληση
+                    και την κοινωνική ένταξη, με την κινητικότητα να αποτελεί
+                    σημαντικό εμπόδιο.
                 </p>
                 <p>
-                    By focusing on cycling as a tool for inclusion, CYCLOS aims
-                    to help these young people overcome mobility barriers,
-                    develop practical skills, build confidence, and become more
-                    autonomous. At the same time, the project promotes
-                    environmental awareness and sustainable transportation
-                    practices.
+                    Εστιάζοντας στην ποδηλασία ως εργαλείο ένταξης, το CYCLOS
+                    στοχεύει να βοηθήσει αυτούς τους νέους να ξεπεράσουν τα
+                    εμπόδια κινητικότητας, να αναπτύξουν πρακτικές δεξιότητες, να
+                    χτίσουν αυτοπεποίθηση και να γίνουν πιο αυτόνομοι.
+                    Ταυτόχρονα, το έργο προωθεί την περιβαλλοντική
+                    ευαισθητοποίηση και τις βιώσιμες πρακτικές μεταφορών.
                 </p>
                 <p>
-                    The project will develop educational materials, organize
-                    practical cycling sessions, create a digital learning
-                    platform, and provide training for youth workers across the
-                    partner countries.
+                    Το έργο θα αναπτύξει εκπαιδευτικό υλικό, θα οργανώσει
+                    πρακτικές συνεδρίες ποδηλασίας, θα δημιουργήσει μια ψηφιακή
+                    πλατφόρμα μάθησης και θα παρέχει εκπαίδευση για εργαζόμενους
+                    νεολαίας σε όλες τις χώρες εταίρους.
                 </p>
             </div>
         </div>
@@ -139,7 +140,7 @@ const targetGroups = [
                             <h3 class="font-semibold text-lg">
                                 {t("about.timeline.duration")}
                             </h3>
-                            <p class="text-gray-600">of collaborative work</p>
+                            <p class="text-gray-600">συνεργατικής εργασίας</p>
                         </div>
                     </div>
                     <div class="relative flex items-center">
@@ -237,13 +238,14 @@ const targetGroups = [
                 />
             </div>
             <h2 class="text-2xl font-bold mb-4">
-                Funded by the European Union
+                Χρηματοδοτείται από την Ευρωπαϊκή Ένωση
             </h2>
             <p class="text-gray-600 max-w-2xl mx-auto">
-                CYCLOS is a Cooperation Partnership funded under the ERASMUS+
-                Programme (KA220-YOU) with a total budget of €250,000. The
-                project is coordinated by FLVS (France) in partnership with
-                organizations from Romania, Austria, and Greece.
+                Το CYCLOS είναι μια Σύμπραξη Συνεργασίας που χρηματοδοτείται στο
+                πλαίσιο του προγράμματος ERASMUS+ (KA220-YOU) με συνολικό
+                προϋπολογισμό 250.000 €. Το έργο συντονίζεται από την FLVS
+                (Γαλλία) σε συνεργασία με οργανισμούς από τη Ρουμανία, την
+                Αυστρία και την Ελλάδα.
             </p>
         </div>
     </section>

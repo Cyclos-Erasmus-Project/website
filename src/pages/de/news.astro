@@ -11,16 +11,16 @@ const t = useTranslations(lang)
 const newsItems = [
   {
     slug: 'project-launch',
-    title: 'CYCLOS Project Officially Launches',
+    title: 'CYCLOS-Projekt offiziell gestartet',
     date: '2025-09-01',
-    excerpt: 'The CYCLOS project has officially begun, bringing together four partner organizations from France, Romania, Austria, and Greece to promote youth inclusion through cycling.',
+    excerpt: 'Das CYCLOS-Projekt hat offiziell begonnen und bringt vier Partnerorganisationen aus Frankreich, Rumänien, Österreich und Griechenland zusammen, um die Inklusion von Jugendlichen durch Radfahren zu fördern.',
     image: null
   },
   {
     slug: 'partnership-meeting',
-    title: 'First Partnership Meeting Announced',
+    title: 'Erstes Partnerschaftstreffen angekündigt',
     date: '2025-09-15',
-    excerpt: 'Partners will convene for the first transnational meeting to kick off project activities and establish work package timelines.',
+    excerpt: 'Die Partner werden sich zum ersten transnationalen Treffen versammeln, um die Projektaktivitäten zu starten und Zeitpläne für die Arbeitspakete festzulegen.',
     image: null
   }
 ]
@@ -84,7 +84,7 @@ function formatDate(dateString: string): string {
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
           </svg>
           <p class="text-gray-500 text-lg">{t('news.noNews')}</p>
-          <p class="text-gray-400 mt-2">Check back soon for project updates!</p>
+          <p class="text-gray-400 mt-2">Schauen Sie bald wieder vorbei für Projektupdates!</p>
         </div>
       )}
     </div>
@@ -93,9 +93,9 @@ function formatDate(dateString: string): string {
   <!-- Newsletter CTA -->
   <section class="section-alt">
     <div class="container-narrow text-center">
-      <h2 class="text-2xl font-bold mb-4">Stay Updated</h2>
+      <h2 class="text-2xl font-bold mb-4">Bleiben Sie informiert</h2>
       <p class="text-gray-600 mb-6">
-        Follow the CYCLOS project progress and receive updates about our activities, events, and resources.
+        Verfolgen Sie den Fortschritt des CYCLOS-Projekts und erhalten Sie Updates zu unseren Aktivitäten, Veranstaltungen und Ressourcen.
       </p>
       <a href={`${base}/${lang}/contact/`} class="btn-primary">
         {t('nav.contact')}

@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 No changes yet.
 
+## [0.10.1] - 2026-02-02
+
+### Fixed
+- **Complete translations for all 5 languages (DE, FR, RO, EL, EN) across all pages**
+  - Country names now use translation keys (`t('countries.france')`, etc.) for proper localization
+
 ## [0.10.0] - 2025-12-22
 
 ### Added
@@ -20,6 +26,12 @@ No changes yet.
   - Provider-agnostic design allows future swapping if needed
 
 ### Fixed
+- **Add Automated Changelog Generation**
+  - Add `changelog` field to proposal.md template (optional short summary for changelog)
+  - Add `severity` field to proposal.md template (major | minor | patch)
+  - Create Python script to generate CHANGELOG.md from archived changes
+  - Create release workflow script to bump version and create git tags
+  - Group entries by git tag/version when available, otherwise by date
 - **Fix Partner Logos Consistency**
   - Ensure all 4 partner logos (FLVS/VIF, ASSOC, AFIS, Computer Solutions SA) are consistently used across all pages
   - Replace placeholder initials with actual partner logos on contact pages

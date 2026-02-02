@@ -16,17 +16,17 @@ const partners = [
         id: "flvs",
         name: "FLVS",
         logo: flvsLogo.src,
-        fullName: "Fédérons Les Villes pour la Santé",
+        fullName: "Federons Les Villes pour la Sante",
         country: "France",
-        city: "Saint-André-Lez-Lille",
+        city: "Saint-Andre-Lez-Lille",
         lead: true,
         description:
-            "FLVS is a non-profit organization recognized as being of general interest since 1991. The organization deploys the Vivons en Forme (VIF) programme with over 30 years of experience in more than 300 cities across France. The programme focuses on preventing overweight and obesity in children and has expanded to support health, well-being, and healthy living environments for all, with particular focus on disadvantaged and vulnerable members of society.",
+            "FLVS est une organisation a but non lucratif reconnue d'interet general depuis 1991. L'organisation deploie le programme Vivons en Forme (VIF) avec plus de 30 ans d'experience dans plus de 300 villes en France. Le programme se concentre sur la prevention du surpoids et de l'obesite chez les enfants et s'est elargi pour soutenir la sante, le bien-etre et des environnements de vie sains pour tous, avec un accent particulier sur les membres defavorises et vulnerables de la societe.",
         expertise: [
-            "Health promotion",
-            "Social marketing methodology",
-            "Community-based interventions",
-            "Behavioral change programs",
+            "Promotion de la sante",
+            "Methodologie de marketing social",
+            "Interventions communautaires",
+            "Programmes de changement comportemental",
         ],
         website: null,
     },
@@ -35,17 +35,17 @@ const partners = [
         name: "ASSOC",
         fullName:
             "Asociatia Profesionala Neguvernamentala de Asistenta Sociala",
-        country: "Romania",
+        country: "Roumanie",
         city: "Baia Mare",
         logo: assocLogo.src,
         lead: false,
         description:
-            "ASSOC is a non-governmental organization established in 1995 as a social services provider. Their mission is to foster social integration and improve life conditions of vulnerable groups through education and work. With over 60 implemented projects, ASSOC has developed educational and social services for people with disabilities, Roma communities, elderly people, migrants, and families in crisis.",
+            "ASSOC est une organisation non gouvernementale creee en 1995 en tant que prestataire de services sociaux. Sa mission est de favoriser l'integration sociale et d'ameliorer les conditions de vie des groupes vulnerables par l'education et le travail. Avec plus de 60 projets realises, ASSOC a developpe des services educatifs et sociaux pour les personnes handicapees, les communautes roms, les personnes agees, les migrants et les familles en crise.",
         expertise: [
-            "Social services",
-            "Disability support",
-            "Vocational counseling",
-            "Integration services",
+            "Services sociaux",
+            "Accompagnement du handicap",
+            "Conseil professionnel",
+            "Services d'integration",
         ],
         website: "https://www.assoc.ro",
     },
@@ -54,16 +54,16 @@ const partners = [
         name: "AFIS",
         logo: afisLogo.src,
         fullName: "Austrian Forum for Integration and Sustainability",
-        country: "Austria",
-        city: "Vienna",
+        country: "Autriche",
+        city: "Vienne",
         lead: false,
         description:
-            "The Austrian Forum for Integration and Sustainability (AFIS) was established by experts in international educational project management, education, and social integration. The organization aims to address the growing need for inclusive educational support and integration of young people from disadvantaged backgrounds, including youth with disabilities, migrant youth, and those from economically disadvantaged families.",
+            "L'Austrian Forum for Integration and Sustainability (AFIS) a ete cree par des experts en gestion de projets educatifs internationaux, en education et en integration sociale. L'organisation vise a repondre au besoin croissant de soutien educatif inclusif et d'integration des jeunes issus de milieux defavorises, notamment les jeunes handicapes, les jeunes migrants et ceux issus de familles economiquement defavorisees.",
         expertise: [
-            "Educational project management",
-            "Youth empowerment",
-            "Social integration",
-            "Non-formal education",
+            "Gestion de projets educatifs",
+            "Autonomisation des jeunes",
+            "Integration sociale",
+            "Education non formelle",
         ],
         website: "https://www.oefis.org",
     },
@@ -72,16 +72,16 @@ const partners = [
         logo: cslLogo.src,
         name: "Computer Solutions SA",
         fullName: "Computer Solutions SA",
-        country: "Greece",
-        city: "Athens",
+        country: "Grece",
+        city: "Athenes",
         lead: false,
         description:
-            "Computer Solutions SA is a Greek company with expertise in digital solutions and technology development. They bring technical expertise to the CYCLOS project, particularly in developing the digital platform and learning application that will support the project's educational objectives.",
+            "Computer Solutions SA est une entreprise grecque specialisee dans les solutions numeriques et le developpement technologique. Elle apporte son expertise technique au projet CYCLOS, notamment dans le developpement de la plateforme numerique et de l'application d'apprentissage qui soutiendra les objectifs educatifs du projet.",
         expertise: [
-            "Digital platform development",
-            "E-learning solutions",
-            "Technology integration",
-            "Software development",
+            "Developpement de plateformes numeriques",
+            "Solutions e-learning",
+            "Integration technologique",
+            "Developpement logiciel",
         ],
         website: "https://www.csl.gr",
     },
@@ -242,7 +242,7 @@ const partners = [
                                         {partner.description}
                                     </p>
                                     <h3 class="font-semibold text-lg mb-3">
-                                        Areas of Expertise
+                                        {t("partners.areasOfExpertise")}
                                     </h3>
                                     <div class="flex flex-wrap gap-2">
                                         {partner.expertise.map((exp) => (
@@ -266,12 +266,10 @@ const partners = [
     >
         <div class="container-wide text-center">
             <h2 class="text-3xl font-bold mb-4">
-                Working Together Across Europe
+                {t("partners.workingTogether")}
             </h2>
             <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-                Our diverse partnership brings together expertise in health
-                promotion, social services, education, and technology to create
-                meaningful impact for disadvantaged youth.
+                {t("partners.workingTogetherDesc")}
             </p>
             <a
                 href={`${base}/${lang}/contact/`}
