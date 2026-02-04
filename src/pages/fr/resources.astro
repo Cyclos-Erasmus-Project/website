@@ -9,19 +9,19 @@ const t = useTranslations(lang);
 // Resources will be populated as the project progresses
 const resources = [
     {
-        category: "Materiels pedagogiques",
+        category: "Supports pédagogiques",
         items: [
             {
-                title: "Guide pedagogique",
+                title: "Guide pédagogique",
                 description:
-                    "Guide complet sur le velo pour l'inclusion (a venir en 2026)",
+                    "Guide complet sur le vélo comme outil d'inclusion sociale (disponible en 2026)",
                 status: "coming",
                 file: null,
             },
             {
                 title: "Modules de formation",
                 description:
-                    "Materiels de formation professionnelle pour les animateurs jeunesse",
+                    "Supports de formation destinés aux professionnels travaillant avec les jeunes",
                 status: "coming",
                 file: null,
             },
@@ -31,21 +31,21 @@ const resources = [
         category: "Documents du projet",
         items: [
             {
-                title: "Resume du projet",
+                title: "Présentation du projet",
                 description:
-                    "Apercu des objectifs et de l'approche du projet CYCLOS",
+                    "Aperçu des objectifs et de l'approche du projet CYCLOS",
                 status: "available",
                 file: "/documents/project-summary.pdf",
             },
         ],
     },
     {
-        category: "Outils numeriques",
+        category: "Outils numériques",
         items: [
             {
                 title: "Plateforme d'apprentissage",
                 description:
-                    "Application numerique pour l'education au velo (en developpement)",
+                    "Application numérique dédiée à l'éducation au vélo (en cours de développement)",
                 status: "coming",
                 file: null,
             },
@@ -189,13 +189,11 @@ const resources = [
                         d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                     ></path>
                 </svg>
-                <h2 class="text-2xl font-bold mb-4">Ressources bientot disponibles</h2>
+                <h2 class="text-2xl font-bold mb-4">Ressources à venir</h2>
                 <p class="text-gray-600 mb-6">
-                    {t("resources.noResources")} Au fur et a mesure de l'avancement du
-                    projet sur ses 30 mois, des materiels pedagogiques, des guides et
-                    des outils numeriques seront mis a disposition ici en telechargement.
+                    Les ressources seront mises à disposition progressivement, au fil de l'avancement du projet sur une durée de 30 mois. Les supports pédagogiques, guides et outils numériques seront disponibles ici en téléchargement.
                 </p>
-                <p class="text-gray-600">Ressources prevues :</p>
+                <p class="text-gray-600">Les ressources attendues comprennent :</p>
                 <ul class="text-left max-w-md mx-auto mt-4 space-y-2">
                     <li class="flex items-center text-gray-600">
                         <svg
@@ -210,7 +208,7 @@ const resources = [
                                 stroke-width="2"
                                 d="M9 5l7 7-7 7"></path>
                         </svg>
-                        Guide pedagogique en 5 langues
+                        Guide pédagogique en 5 langues
                     </li>
                     <li class="flex items-center text-gray-600">
                         <svg
@@ -240,7 +238,7 @@ const resources = [
                                 stroke-width="2"
                                 d="M9 5l7 7-7 7"></path>
                         </svg>
-                        Plateforme d'apprentissage numerique
+                        Plateforme numérique d'apprentissage
                     </li>
                     <li class="flex items-center text-gray-600">
                         <svg

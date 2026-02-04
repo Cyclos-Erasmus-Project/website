@@ -22,7 +22,7 @@ const objectives = [
 const partners = [
     {
         name: "FLVS",
-        fullName: "Fédérons Les Villes pour la Santé",
+        fullName: "Fédération Française des Villes Santé",
         country: "France",
         lead: true,
         logo: flvsLogo.src,
@@ -45,7 +45,7 @@ const partners = [
     {
         name: "CSL",
         fullName: "Computer Solutions SA",
-        country: "Grece",
+        country: "Grèce",
         lead: false,
         logo: cslLogo.src,
     },
@@ -222,8 +222,7 @@ function formatDate(date: Date): string {
         <div class="container-wide">
             <h2 class="text-center mb-4">{t("home.partners.title")}</h2>
             <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-                Quatre organisations à travers l'Europe travaillant ensemble
-                pour l'inclusion des jeunes par le vélo
+                {t("partners.subtitle")}
             </p>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {

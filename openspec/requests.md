@@ -4,6 +4,56 @@ This log tracks stakeholder feedback and requests that result in OpenSpec change
 
 ---
 
+## 2026-02-03: French Website Content Corrections
+
+**From:** Sophie MCGANNAN <sophie.mcgannan@vivonsenforme.org>  
+**To:** o.giannakopoulou, Nigar, oefisteam, s.pitoglou  
+**Date:** Tuesday, 3 February 2026 at 08:59  
+**Subject:** Re: Corrections Website CYCLOS FR  
+**Attachment:** CORRECTIONS_WEBSITE_CYCLOS_FR.md
+
+### Summary
+
+Sophie (FLVS) forwarded a document with comprehensive French language corrections prepared by her colleagues. The corrections cover all major pages of the French website with improvements to:
+
+1. **Terminology updates** - "jeunes défavorisés" → "jeunes en situation de vulnérabilité", "Mobilité Verte" → "Mobilité durable"
+2. **Proper French phrasing** - More natural and professional French throughout
+3. **Work package descriptions** - Complete rewrite of all 5 work package titles and descriptions
+4. **Partner descriptions** - Updated FLVS name to "Fédération Française des Villes Santé" and improved all partner expertise descriptions
+5. **EU funding disclaimer** - Updated to proper co-funding acknowledgment language
+6. **Accent corrections** - Fixed missing accents throughout (é, è, ê, à, etc.)
+
+### Implementation
+
+**Status:** Implemented directly (no OpenSpec change proposal needed for content corrections)  
+**Severity:** patch
+
+### Files Modified
+
+- `src/i18n/translations.ts` - Updated all French translation keys
+- `src/pages/fr/index.astro` - Fixed partner info
+- `src/pages/fr/about.astro` - Updated project overview, objectives, target groups, funding section
+- `src/pages/fr/partners.astro` - Updated all 4 partner descriptions and expertise areas
+- `src/pages/fr/work-packages.astro` - Updated all 5 work package activities and deliverables
+- `src/pages/fr/resources.astro` - Updated resource categories and descriptions
+- `src/pages/fr/contact.astro` - Fixed partner names and city names
+- `src/components/Footer.astro` - Now uses new `footer.description` translation key
+
+### Additional Changes
+
+- Added `footer.description` translation key to all 5 languages to support customized footer text per language
+
+### Original Email
+
+> Thank you Olympia.
+>
+> My colleagues have also checked the French site and made the corrections in the attached document (in green)
+>
+> Best wishes,  
+> Sophie
+
+---
+
 ## 2026-02-02: German Translation Completeness
 
 **From:** Nigar Sultanli <researcher@oefis.org>  

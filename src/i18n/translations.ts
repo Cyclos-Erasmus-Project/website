@@ -64,19 +64,30 @@ export const translations = {
     "about.target.youth": "Disadvantaged youth facing barriers to employment",
     "about.target.workers": "Youth workers and professionals",
     "about.target.stakeholders": "Local governments and NGOs",
-    "about.target.youthDesc": "Young people with disabilities, migrant backgrounds, or from low socioeconomic situations",
-    "about.target.workersDesc": "Professionals organizing activities for disadvantaged youth",
-    "about.target.stakeholdersDesc": "Organizations working on youth inclusion and sustainable mobility",
-    "about.projectOverview.p1": "CYCLOS (Youth Cycling for Inclusion) is an ERASMUS+ KA220-YOU Cooperation Partnership that brings together four organizations from France, Romania, Austria, and Greece. The project addresses a critical challenge: many disadvantaged young people face barriers to employment and social integration, with mobility being a significant obstacle.",
-    "about.projectOverview.p2": "By focusing on cycling as a tool for inclusion, CYCLOS aims to help these young people overcome mobility barriers, develop practical skills, build confidence, and become more autonomous. At the same time, the project promotes environmental awareness and sustainable transportation practices.",
-    "about.projectOverview.p3": "The project will develop educational materials, organize practical cycling sessions, create a digital learning platform, and provide training for youth workers across the partner countries.",
+    "about.target.youthDesc":
+      "Young people with disabilities, migrant backgrounds, or from low socioeconomic situations",
+    "about.target.workersDesc":
+      "Professionals organizing activities for disadvantaged youth",
+    "about.target.stakeholdersDesc":
+      "Organizations working on youth inclusion and sustainable mobility",
+    "about.projectOverview.p1":
+      "CYCLOS (Youth Cycling for Inclusion) is an ERASMUS+ KA220-YOU Cooperation Partnership that brings together four organizations from France, Romania, Austria, and Greece. The project addresses a critical challenge: many disadvantaged young people face barriers to employment and social integration, with mobility being a significant obstacle.",
+    "about.projectOverview.p2":
+      "By focusing on cycling as a tool for inclusion, CYCLOS aims to help these young people overcome mobility barriers, develop practical skills, build confidence, and become more autonomous. At the same time, the project promotes environmental awareness and sustainable transportation practices.",
+    "about.projectOverview.p3":
+      "The project will develop educational materials, organize practical cycling sessions, create a digital learning platform, and provide training for youth workers across the partner countries.",
     "about.fundedBy": "Funded by the European Union",
-    "about.fundedByDesc": "CYCLOS is a Cooperation Partnership funded under the ERASMUS+ Programme (KA220-YOU) with a total budget of 250,000 euros. The project is coordinated by FLVS (France) in partnership with organizations from Romania, Austria, and Greece.",
-    "about.objective1": "Promote the social inclusion of disadvantaged young people through cycling",
-    "about.objective2": "Raise environmental awareness and encourage greener mobility choices",
-    "about.objective3": "Help youth become more autonomous and independent in their daily lives",
+    "about.fundedByDesc":
+      "CYCLOS is a Cooperation Partnership funded under the ERASMUS+ Programme (KA220-YOU) with a total budget of 250,000 euros. The project is coordinated by FLVS (France) in partnership with organizations from Romania, Austria, and Greece.",
+    "about.objective1":
+      "Promote the social inclusion of disadvantaged young people through cycling",
+    "about.objective2":
+      "Raise environmental awareness and encourage greener mobility choices",
+    "about.objective3":
+      "Help youth become more autonomous and independent in their daily lives",
     "about.objective4": "Boost skills, self-confidence, and employability",
-    "about.objective5": "Equip youth workers with tools to organize inclusive cycling sessions",
+    "about.objective5":
+      "Equip youth workers with tools to organize inclusive cycling sessions",
     "about.objective6": "Develop a digital platform for learning and awareness",
 
     // Partners
@@ -161,6 +172,8 @@ export const translations = {
     // Footer
     "footer.project": "An ERASMUS+ Project",
     "footer.funding": "Co-funded by the European Union",
+    "footer.description":
+      "Promoting social inclusion of disadvantaged young people through cycling, environmental awareness, and sustainable mobility.",
     "footer.disclaimer":
       "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them.",
     "footer.rights": "All rights reserved.",
@@ -192,10 +205,10 @@ export const translations = {
     "home.objectives.title": "Nos Objectifs",
     "home.objectives.inclusion": "Inclusion Sociale",
     "home.objectives.inclusionDesc":
-      "Accompagner les jeunes défavorisés dans leur intégration sociale et professionnelle grâce au vélo.",
-    "home.objectives.mobility": "Mobilité Verte",
+      "Accompagner les jeunes défavorisés dans leur insertion sociale et professionnelle par le vélo.",
+    "home.objectives.mobility": "Mobilité durable",
     "home.objectives.mobilityDesc":
-      "Promouvoir les transports durables et la sensibilisation environnementale.",
+      "Promouvoir les transports durables et la sensibilisation à l'environnement.",
     "home.objectives.skills": "Développement des Compétences",
     "home.objectives.skillsDesc":
       "Renforcer la confiance, l'autonomie et l'employabilité par la formation pratique.",
@@ -211,39 +224,53 @@ export const translations = {
 
     // About
     "about.title": "À propos de CYCLOS",
-    "about.background.title": "Contexte du Projet",
+    "about.background.title": "Contexte du projet",
     "about.background.text":
-      "CYCLOS est un projet de partenariat de coopération ERASMUS+ KA220-YOU qui rassemble des organisations de France, Roumanie, Autriche et Grèce pour promouvoir l'inclusion sociale des jeunes défavorisés à travers le vélo.",
+      "CYCLOS est un projet de partenariat de coopération Erasmus+ (KA220-YOU) qui réunit des organisations de France, de Roumanie, d'Autriche et de Grèce. Son objectif est de promouvoir l'inclusion sociale des jeunes en situation de vulnérabilité grâce à la pratique du vélo.",
     "about.objectives.title": "Objectifs",
     "about.timeline.title": "Calendrier du Projet",
     "about.timeline.start": "Début du projet",
     "about.timeline.end": "Fin du projet",
     "about.timeline.duration": "30 mois",
-    "about.target.title": "Public Cible",
-    "about.target.youth":
-      "Jeunes défavorisés confrontés à des obstacles à l'emploi",
-    "about.target.workers": "Animateurs jeunesse et professionnels",
-    "about.target.stakeholders": "Collectivités locales et ONG",
+    "about.target.title": "Public cible",
+    "about.target.youth": "Jeunes en situation de vulnérabilité",
+    "about.target.workers":
+      "Animateurs jeunesse et professionnels de l'accompagnement",
+    "about.target.stakeholders":
+      "Collectivités locales et organisations de la société civile",
     "about.timeline.collaborative": "de travail collaboratif",
-    "about.target.youthDesc": "Jeunes en situation de handicap, issus de l'immigration ou de milieux socio-économiques défavorisés",
-    "about.target.workersDesc": "Professionnels organisant des activités pour les jeunes défavorisés",
-    "about.target.stakeholdersDesc": "Organisations travaillant sur l'inclusion des jeunes et la mobilité durable",
-    "about.projectOverview.p1": "CYCLOS (Youth Cycling for Inclusion) est un partenariat de coopération ERASMUS+ KA220-YOU qui rassemble quatre organisations de France, Roumanie, Autriche et Grèce. Le projet répond à un défi majeur : de nombreux jeunes défavorisés font face à des obstacles à l'emploi et à l'intégration sociale, la mobilité étant un obstacle important.",
-    "about.projectOverview.p2": "En se concentrant sur le vélo comme outil d'inclusion, CYCLOS vise à aider ces jeunes à surmonter les obstacles à la mobilité, à développer des compétences pratiques, à renforcer leur confiance et à devenir plus autonomes. Parallèlement, le projet favorise la sensibilisation à l'environnement et les pratiques de transport durable.",
-    "about.projectOverview.p3": "Le projet développera des supports pédagogiques, organisera des sessions pratiques de vélo, créera une plateforme d'apprentissage numérique et assurera la formation des animateurs jeunesse dans les pays partenaires.",
+    "about.target.youthDesc":
+      "Jeunes confrontés à des obstacles à l'emploi, notamment les jeunes en situation de handicap, issus de l'immigration ou de milieux socio-économiques défavorisés.",
+    "about.target.workersDesc":
+      "Professionnels organisant des activités et des actions en faveur de jeunes en situation de vulnérabilité.",
+    "about.target.stakeholdersDesc":
+      "Structures engagées dans l'inclusion des jeunes et la promotion de la mobilité durable.",
+    "about.projectOverview.p1":
+      "CYCLOS (Youth Cycling for Inclusion) est un projet de partenariat de coopération Erasmus+ (KA220-YOU) qui réunit quatre organisations issues de France, de Roumanie, d'Autriche et de Grèce. Le projet répond à un enjeu majeur : de nombreux jeunes en situation de vulnérabilité rencontrent des obstacles importants à l'emploi et à l'insertion sociale, la mobilité constituant l'un des freins principaux.",
+    "about.projectOverview.p2":
+      "En s'appuyant sur le vélo comme outil d'inclusion, CYCLOS vise à aider ces jeunes à surmonter les difficultés liées à la mobilité, à développer des compétences pratiques, à renforcer leur confiance en eux et à gagner en autonomie. Parallèlement, le projet encourage la sensibilisation aux enjeux environnementaux et la promotion de modes de transport durables.",
+    "about.projectOverview.p3":
+      "Le projet prévoit la création de ressources pédagogiques, l'organisation de sessions pratiques autour du vélo, le développement d'une plateforme numérique d'apprentissage ainsi que la mise en place de formations destinées aux professionnels de la jeunesse dans les pays partenaires.",
     "about.fundedBy": "Financé par l'Union européenne",
-    "about.fundedByDesc": "CYCLOS est un partenariat de coopération financé dans le cadre du programme ERASMUS+ (KA220-YOU) avec un budget total de 250 000 euros. Le projet est coordonné par FLVS (France) en partenariat avec des organisations de Roumanie, d'Autriche et de Grèce.",
-    "about.objective1": "Promouvoir l'inclusion sociale des jeunes défavorisés par le cyclisme",
-    "about.objective2": "Sensibiliser à l'environnement et encourager des choix de mobilité plus verts",
-    "about.objective3": "Aider les jeunes à devenir plus autonomes et indépendants dans leur vie quotidienne",
-    "about.objective4": "Renforcer les compétences, la confiance en soi et l'employabilité",
-    "about.objective5": "Doter les animateurs jeunesse d'outils pour organiser des sessions de vélo inclusives",
-    "about.objective6": "Développer une plateforme numérique d'apprentissage et de sensibilisation",
+    "about.fundedByDesc":
+      "CYCLOS est un projet de partenariat de coopération financé dans le cadre du programme Erasmus+ (KA220-YOU), pour un budget total de 250 000 €. Le projet est coordonné par la FLVS (France), en partenariat avec des organisations de Roumanie, d'Autriche et de Grèce.",
+    "about.objective1":
+      "Promouvoir l'inclusion sociale des jeunes en situation de vulnérabilité grâce à la pratique du vélo.",
+    "about.objective2":
+      "Sensibiliser aux enjeux environnementaux et encourager des choix de mobilité plus durables.",
+    "about.objective3":
+      "Aider les jeunes à gagner en autonomie et en indépendance dans leur vie quotidienne.",
+    "about.objective4":
+      "Renforcer les compétences, la confiance en soi et l'employabilité des jeunes.",
+    "about.objective5":
+      "Doter les professionnels de la jeunesse d'outils pour organiser des activités cyclistes inclusives.",
+    "about.objective6":
+      "Développer une plateforme numérique dédiée à l'apprentissage et à la sensibilisation.",
 
     // Partners
     "partners.title": "Organisations Partenaires",
     "partners.subtitle":
-      "Quatre organisations à travers l'Europe travaillant ensemble pour l'inclusion des jeunes",
+      "Quatre structures en Europe s'engagent ensemble pour l'inclusion des jeunes via le cyclisme.",
     "partners.country": "Pays",
     "partners.website": "Visiter le site",
     "partners.lead": "Partenaire principal",
@@ -254,32 +281,33 @@ export const translations = {
 
     // Work Packages
     "wp.title": "Lots de Travail",
-    "wp.subtitle": "Le projet est organisé en cinq lots de travail",
+    "wp.subtitle":
+      "Le projet CYCLOS s'articule autour de cinq lots de travail complémentaires",
     "wp.activities": "Activités clés",
     "wp.deliverables": "Livrables",
     "wp.budgetOverview": "Aperçu du budget",
     "wp.ledBy": "Dirigé par",
     "wp.budgetAllocation": "Allocation budgétaire",
     "wp.totalBudget": "Budget total du projet",
-    "wp.wp1.title": "LT1 : Gestion de Projet",
+    "wp.wp1.title": "LT1 – Gestion de projet",
     "wp.wp1.desc":
-      "Coordination, assurance qualité et gestion administrative du projet.",
-    "wp.wp2.title": "LT2 : Connaissances Cyclistes",
+      "Pilotage global, assurance qualité et gestion administrative.",
+    "wp.wp2.title": "LT2 – Transmission des savoirs cyclistes",
     "wp.wp2.desc":
-      "Développement de matériels éducatifs et modules de formation sur le vélo.",
-    "wp.wp3.title": "LT3 : De la Théorie à la Pratique",
+      "Conception de supports pédagogiques et de modules de formation dédiés au vélo.",
+    "wp.wp3.title": "LT3 – Du savoir à la pratique",
     "wp.wp3.desc":
-      "Sessions pratiques de vélo pour les jeunes défavorisés et formation des professionnels.",
-    "wp.wp4.title": "LT4 : Plateforme Numérique",
+      "Ateliers pratiques pour les jeunes en situation de vulnérabilité et formation des encadrants.",
+    "wp.wp4.title": "LT4 – Outil numérique d'apprentissage",
     "wp.wp4.desc":
-      "Développement d'une application d'apprentissage numérique pour le vélo et la sensibilisation environnementale.",
-    "wp.wp5.title": "LT5 : Diffusion et Évaluation",
+      "Création d'une application interactive pour l'apprentissage du vélo et la sensibilisation écologique.",
+    "wp.wp5.title": "LT5 – Impact et pérennité",
     "wp.wp5.desc":
-      "Communication, diffusion des résultats et évaluation de la qualité.",
+      "Stratégie de communication, valorisation des résultats et évaluation continue.",
 
     // News
     "news.title": "Actualités",
-    "news.subtitle": "Restez informé des derniers développements du projet",
+    "news.subtitle": "Suivez l'avancée du projet CYCLOS en temps réel",
     "news.readMore": "Lire la suite",
     "news.noNews": "Aucun article disponible pour le moment.",
 
@@ -293,21 +321,25 @@ export const translations = {
     "resources.comingSoon": "Bientôt disponible",
 
     // Contact
-    "contact.title": "Nous Contacter",
-    "contact.subtitle": "Contactez l'équipe du projet CYCLOS",
-    "contact.lead.title": "Partenaire Principal",
-    "contact.partners.title": "Organisations Partenaires",
+    "contact.title": "Nous contacter",
+    "contact.subtitle": "Contactez l'équipe du projet CYCLOS.",
+    "contact.lead.title": "Partenaire principal",
+    "contact.partners.title": "Organisations partenaires",
     "contact.email": "Email",
-    "contact.getInTouch": "Nous contacter",
-    "contact.generalInquiries": "Renseignements généraux",
-    "contact.generalInquiriesDesc": "Pour les questions générales sur le projet CYCLOS",
-    "contact.mediaPress": "Médias et presse",
-    "contact.mediaPressDesc": "Pour les demandes des médias et de la presse",
+    "contact.getInTouch": "Entrer en contact",
+    "contact.generalInquiries": "Demandes générales",
+    "contact.generalInquiriesDesc":
+      "Pour toute question concernant le projet CYCLOS, veuillez contacter le partenaire principal.",
+    "contact.mediaPress": "Médias & presse",
+    "contact.mediaPressDesc":
+      "Pour les demandes presse et médias, merci de contacter le coordinateur du projet.",
     "contact.partnershipOpportunities": "Opportunités de partenariat",
-    "contact.partnershipOpportunitiesDesc": "Intéressé par une collaboration avec nous ?",
-    "contact.sendEmail": "Envoyer un email",
+    "contact.partnershipOpportunitiesDesc":
+      "Vous souhaitez collaborer avec nous ? Contactez-nous pour discuter de partenariats potentiels.",
+    "contact.sendEmail": "Envoyer un e-mail",
     "contact.europeanNetwork": "Notre réseau européen",
-    "contact.europeanNetworkDesc": "Le projet CYCLOS rassemble des organisations de toute l'Europe, unies dans notre mission de promouvoir l'inclusion des jeunes par le cyclisme.",
+    "contact.europeanNetworkDesc":
+      "Quatre pays engagés ensemble pour l'inclusion des jeunes à travers le vélo.",
 
     // Countries
     "countries.france": "France",
@@ -316,10 +348,12 @@ export const translations = {
     "countries.greece": "Grèce",
 
     // Footer
-    "footer.project": "Un projet ERASMUS+",
+    "footer.project": "Un projet Erasmus+ cofinancé par l'Union européenne",
     "footer.funding": "Cofinancé par l'Union européenne",
+    "footer.description":
+      "Le vélo, vecteur d'inclusion et de durabilité. Donner aux jeunes en situation de vulnérabilité les clés de leur autonomie par le cyclisme, la mobilité verte et l'engagement écologique.",
     "footer.disclaimer":
-      "Financé par l'Union européenne. Les points de vue et opinions exprimés n'engagent que leur(s) auteur(s) et ne reflètent pas nécessairement ceux de l'Union européenne ou de l'Agence exécutive européenne pour l'éducation et la culture (EACEA). Ni l'Union européenne ni l'EACEA ne peuvent en être tenues responsables.",
+      "Ce projet est cofinancé par l'Union européenne dans le cadre du programme Erasmus+. Les points de vue et opinions exprimés dans ce cadre n'engagent que leurs auteurs et ne reflètent pas nécessairement la position officielle de l'Union européenne ou de l'Agence exécutive européenne pour l'éducation et la culture (EACEA). Ni l'Union européenne ni l'EACEA ne sauraient être tenues responsables des contenus présentés.",
     "footer.rights": "Tous droits réservés.",
 
     // Common
@@ -382,20 +416,33 @@ export const translations = {
     "about.target.workers": "Lucrători de tineret și profesioniști",
     "about.target.stakeholders": "Autorități locale și ONG-uri",
     "about.timeline.collaborative": "de muncă colaborativă",
-    "about.target.youthDesc": "Tineri cu dizabilități, de origine imigrantă sau din situații socio-economice dificile",
-    "about.target.workersDesc": "Profesioniști care organizează activități pentru tinerii defavorizați",
-    "about.target.stakeholdersDesc": "Organizații care lucrează pentru incluziunea tinerilor și mobilitatea durabilă",
-    "about.projectOverview.p1": "CYCLOS (Youth Cycling for Inclusion) este un parteneriat de cooperare ERASMUS+ KA220-YOU care reunește patru organizații din Franța, România, Austria și Grecia. Proiectul abordează o provocare critică: mulți tineri defavorizați se confruntă cu bariere în calea angajării și integrării sociale, mobilitatea fiind un obstacol semnificativ.",
-    "about.projectOverview.p2": "Concentrându-se pe ciclism ca instrument de incluziune, CYCLOS își propune să ajute acești tineri să depășească barierele de mobilitate, să dezvolte abilități practice, să-și construiască încrederea și să devină mai autonomi. În același timp, proiectul promovează conștientizarea ecologică și practicile de transport durabil.",
-    "about.projectOverview.p3": "Proiectul va dezvolta materiale educaționale, va organiza sesiuni practice de ciclism, va crea o platformă digitală de învățare și va asigura formarea lucrătorilor de tineret din țările partenere.",
+    "about.target.youthDesc":
+      "Tineri cu dizabilități, de origine imigrantă sau din situații socio-economice dificile",
+    "about.target.workersDesc":
+      "Profesioniști care organizează activități pentru tinerii defavorizați",
+    "about.target.stakeholdersDesc":
+      "Organizații care lucrează pentru incluziunea tinerilor și mobilitatea durabilă",
+    "about.projectOverview.p1":
+      "CYCLOS (Youth Cycling for Inclusion) este un parteneriat de cooperare ERASMUS+ KA220-YOU care reunește patru organizații din Franța, România, Austria și Grecia. Proiectul abordează o provocare critică: mulți tineri defavorizați se confruntă cu bariere în calea angajării și integrării sociale, mobilitatea fiind un obstacol semnificativ.",
+    "about.projectOverview.p2":
+      "Concentrându-se pe ciclism ca instrument de incluziune, CYCLOS își propune să ajute acești tineri să depășească barierele de mobilitate, să dezvolte abilități practice, să-și construiască încrederea și să devină mai autonomi. În același timp, proiectul promovează conștientizarea ecologică și practicile de transport durabil.",
+    "about.projectOverview.p3":
+      "Proiectul va dezvolta materiale educaționale, va organiza sesiuni practice de ciclism, va crea o platformă digitală de învățare și va asigura formarea lucrătorilor de tineret din țările partenere.",
     "about.fundedBy": "Finanțat de Uniunea Europeană",
-    "about.fundedByDesc": "CYCLOS este un parteneriat de cooperare finanțat în cadrul Programului ERASMUS+ (KA220-YOU) cu un buget total de 250.000 de euro. Proiectul este coordonat de FLVS (Franța) în parteneriat cu organizații din România, Austria și Grecia.",
-    "about.objective1": "Promovarea incluziunii sociale a tinerilor defavorizați prin ciclism",
-    "about.objective2": "Creșterea conștientizării ecologice și încurajarea alegerilor de mobilitate mai ecologice",
-    "about.objective3": "Ajutarea tinerilor să devină mai autonomi și independenți în viața de zi cu zi",
-    "about.objective4": "Dezvoltarea abilităților, a încrederii în sine și a angajabilității",
-    "about.objective5": "Dotarea lucrătorilor de tineret cu instrumente pentru organizarea sesiunilor inclusive de ciclism",
-    "about.objective6": "Dezvoltarea unei platforme digitale pentru învățare și conștientizare",
+    "about.fundedByDesc":
+      "CYCLOS este un parteneriat de cooperare finanțat în cadrul Programului ERASMUS+ (KA220-YOU) cu un buget total de 250.000 de euro. Proiectul este coordonat de FLVS (Franța) în parteneriat cu organizații din România, Austria și Grecia.",
+    "about.objective1":
+      "Promovarea incluziunii sociale a tinerilor defavorizați prin ciclism",
+    "about.objective2":
+      "Creșterea conștientizării ecologice și încurajarea alegerilor de mobilitate mai ecologice",
+    "about.objective3":
+      "Ajutarea tinerilor să devină mai autonomi și independenți în viața de zi cu zi",
+    "about.objective4":
+      "Dezvoltarea abilităților, a încrederii în sine și a angajabilității",
+    "about.objective5":
+      "Dotarea lucrătorilor de tineret cu instrumente pentru organizarea sesiunilor inclusive de ciclism",
+    "about.objective6":
+      "Dezvoltarea unei platforme digitale pentru învățare și conștientizare",
 
     // Partners
     "partners.title": "Organizații Partenere",
@@ -479,6 +526,8 @@ export const translations = {
     // Footer
     "footer.project": "Un proiect ERASMUS+",
     "footer.funding": "Cofinanțat de Uniunea Europeană",
+    "footer.description":
+      "Promovarea incluziunii sociale a tinerilor defavorizați prin ciclism, conștientizare ecologică și mobilitate durabilă.",
     "footer.disclaimer":
       "Finanțat de Uniunea Europeană. Punctele de vedere și opiniile exprimate aparțin exclusiv autorului (autorilor) și nu reflectă neapărat punctele de vedere ale Uniunii Europene sau ale Agenției Executive Europene pentru Educație și Cultură (EACEA). Nici Uniunea Europeană, nici EACEA nu pot fi considerate responsabile pentru acestea.",
     "footer.rights": "Toate drepturile rezervate.",
@@ -543,20 +592,33 @@ export const translations = {
     "about.target.workers": "Jugendarbeiter und Fachkräfte",
     "about.target.stakeholders": "Kommunalverwaltungen und NGOs",
     "about.timeline.collaborative": "der Zusammenarbeit",
-    "about.target.youthDesc": "Junge Menschen mit Behinderungen, Migrationshintergrund oder aus sozioökonomisch schwachen Verhältnissen",
-    "about.target.workersDesc": "Fachkräfte, die Aktivitäten für benachteiligte Jugendliche organisieren",
-    "about.target.stakeholdersDesc": "Organisationen, die sich für Jugendinklusion und nachhaltige Mobilität einsetzen",
-    "about.projectOverview.p1": "CYCLOS (Youth Cycling for Inclusion) ist eine ERASMUS+ KA220-YOU Kooperationspartnerschaft, die vier Organisationen aus Frankreich, Rumänien, Österreich und Griechenland zusammenbringt. Das Projekt befasst sich mit einer kritischen Herausforderung: Viele benachteiligte junge Menschen stehen vor Hindernissen bei der Beschäftigung und sozialen Integration, wobei Mobilität ein erhebliches Hindernis darstellt.",
-    "about.projectOverview.p2": "Mit dem Fokus auf Radfahren als Instrument zur Inklusion zielt CYCLOS darauf ab, diesen jungen Menschen zu helfen, Mobilitätsbarrieren zu überwinden, praktische Fähigkeiten zu entwickeln, Selbstvertrauen aufzubauen und autonomer zu werden. Gleichzeitig fördert das Projekt Umweltbewusstsein und nachhaltige Verkehrspraktiken.",
-    "about.projectOverview.p3": "Das Projekt wird Bildungsmaterialien entwickeln, praktische Radfahrsitzungen organisieren, eine digitale Lernplattform schaffen und Schulungen für Jugendarbeiter in den Partnerländern anbieten.",
+    "about.target.youthDesc":
+      "Junge Menschen mit Behinderungen, Migrationshintergrund oder aus sozioökonomisch schwachen Verhältnissen",
+    "about.target.workersDesc":
+      "Fachkräfte, die Aktivitäten für benachteiligte Jugendliche organisieren",
+    "about.target.stakeholdersDesc":
+      "Organisationen, die sich für Jugendinklusion und nachhaltige Mobilität einsetzen",
+    "about.projectOverview.p1":
+      "CYCLOS (Youth Cycling for Inclusion) ist eine ERASMUS+ KA220-YOU Kooperationspartnerschaft, die vier Organisationen aus Frankreich, Rumänien, Österreich und Griechenland zusammenbringt. Das Projekt befasst sich mit einer kritischen Herausforderung: Viele benachteiligte junge Menschen stehen vor Hindernissen bei der Beschäftigung und sozialen Integration, wobei Mobilität ein erhebliches Hindernis darstellt.",
+    "about.projectOverview.p2":
+      "Mit dem Fokus auf Radfahren als Instrument zur Inklusion zielt CYCLOS darauf ab, diesen jungen Menschen zu helfen, Mobilitätsbarrieren zu überwinden, praktische Fähigkeiten zu entwickeln, Selbstvertrauen aufzubauen und autonomer zu werden. Gleichzeitig fördert das Projekt Umweltbewusstsein und nachhaltige Verkehrspraktiken.",
+    "about.projectOverview.p3":
+      "Das Projekt wird Bildungsmaterialien entwickeln, praktische Radfahrsitzungen organisieren, eine digitale Lernplattform schaffen und Schulungen für Jugendarbeiter in den Partnerländern anbieten.",
     "about.fundedBy": "Gefördert von der Europäischen Union",
-    "about.fundedByDesc": "CYCLOS ist eine Kooperationspartnerschaft, die im Rahmen des ERASMUS+ Programms (KA220-YOU) mit einem Gesamtbudget von 250.000 Euro gefördert wird. Das Projekt wird von FLVS (Frankreich) in Partnerschaft mit Organisationen aus Rumänien, Österreich und Griechenland koordiniert.",
-    "about.objective1": "Förderung der sozialen Inklusion benachteiligter junger Menschen durch Radfahren",
-    "about.objective2": "Stärkung des Umweltbewusstseins und Förderung umweltfreundlicherer Mobilitätsentscheidungen",
-    "about.objective3": "Jugendlichen helfen, im Alltag autonomer und unabhängiger zu werden",
-    "about.objective4": "Stärkung von Kompetenzen, Selbstvertrauen und Beschäftigungsfähigkeit",
-    "about.objective5": "Jugendarbeiter mit Werkzeugen ausstatten, um inklusive Radfahrsitzungen zu organisieren",
-    "about.objective6": "Entwicklung einer digitalen Plattform für Lernen und Bewusstseinsbildung",
+    "about.fundedByDesc":
+      "CYCLOS ist eine Kooperationspartnerschaft, die im Rahmen des ERASMUS+ Programms (KA220-YOU) mit einem Gesamtbudget von 250.000 Euro gefördert wird. Das Projekt wird von FLVS (Frankreich) in Partnerschaft mit Organisationen aus Rumänien, Österreich und Griechenland koordiniert.",
+    "about.objective1":
+      "Förderung der sozialen Inklusion benachteiligter junger Menschen durch Radfahren",
+    "about.objective2":
+      "Stärkung des Umweltbewusstseins und Förderung umweltfreundlicherer Mobilitätsentscheidungen",
+    "about.objective3":
+      "Jugendlichen helfen, im Alltag autonomer und unabhängiger zu werden",
+    "about.objective4":
+      "Stärkung von Kompetenzen, Selbstvertrauen und Beschäftigungsfähigkeit",
+    "about.objective5":
+      "Jugendarbeiter mit Werkzeugen ausstatten, um inklusive Radfahrsitzungen zu organisieren",
+    "about.objective6":
+      "Entwicklung einer digitalen Plattform für Lernen und Bewusstseinsbildung",
 
     // Partners
     "partners.title": "Partnerorganisationen",
@@ -641,6 +703,8 @@ export const translations = {
     // Footer
     "footer.project": "Ein ERASMUS+ Projekt",
     "footer.funding": "Kofinanziert von der Europäischen Union",
+    "footer.description":
+      "Förderung der sozialen Inklusion benachteiligter junger Menschen durch Radfahren, Umweltbewusstsein und nachhaltige Mobilität.",
     "footer.disclaimer":
       "Von der Europäischen Union finanziert. Die geäußerten Ansichten und Meinungen entsprechen jedoch ausschließlich denen des Autors bzw. der Autoren und spiegeln nicht zwingend die der Europäischen Union oder der Europäischen Exekutivagentur für Bildung und Kultur (EACEA) wider. Weder die Europäische Union noch die EACEA können dafür verantwortlich gemacht werden.",
     "footer.rights": "Alle Rechte vorbehalten.",
@@ -705,20 +769,33 @@ export const translations = {
     "about.target.workers": "Εργαζόμενοι νεολαίας και επαγγελματίες",
     "about.target.stakeholders": "Τοπικές κυβερνήσεις και ΜΚΟ",
     "about.timeline.collaborative": "συνεργατικής εργασίας",
-    "about.target.youthDesc": "Νέοι με αναπηρίες, μεταναστευτικό υπόβαθρο ή από χαμηλές κοινωνικοοικονομικές καταστάσεις",
-    "about.target.workersDesc": "Επαγγελματίες που οργανώνουν δραστηριότητες για μειονεκτούντες νέους",
-    "about.target.stakeholdersDesc": "Οργανισμοί που εργάζονται για την ένταξη των νέων και τη βιώσιμη κινητικότητα",
-    "about.projectOverview.p1": "Το CYCLOS (Youth Cycling for Inclusion) είναι μια Σύμπραξη Συνεργασίας ERASMUS+ KA220-YOU που συγκεντρώνει τέσσερις οργανισμούς από τη Γαλλία, τη Ρουμανία, την Αυστρία και την Ελλάδα. Το έργο αντιμετωπίζει μια κρίσιμη πρόκληση: πολλοί μειονεκτούντες νέοι αντιμετωπίζουν εμπόδια στην απασχόληση και την κοινωνική ένταξη, με την κινητικότητα να αποτελεί σημαντικό εμπόδιο.",
-    "about.projectOverview.p2": "Εστιάζοντας στην ποδηλασία ως εργαλείο ένταξης, το CYCLOS στοχεύει να βοηθήσει αυτούς τους νέους να ξεπεράσουν τα εμπόδια κινητικότητας, να αναπτύξουν πρακτικές δεξιότητες, να χτίσουν αυτοπεποίθηση και να γίνουν πιο αυτόνομοι. Ταυτόχρονα, το έργο προωθεί την περιβαλλοντική ευαισθητοποίηση και τις βιώσιμες πρακτικές μεταφοράς.",
-    "about.projectOverview.p3": "Το έργο θα αναπτύξει εκπαιδευτικό υλικό, θα οργανώσει πρακτικές συνεδρίες ποδηλασίας, θα δημιουργήσει μια ψηφιακή πλατφόρμα μάθησης και θα παρέχει εκπαίδευση για εργαζόμενους νεολαίας στις χώρες-εταίρους.",
+    "about.target.youthDesc":
+      "Νέοι με αναπηρίες, μεταναστευτικό υπόβαθρο ή από χαμηλές κοινωνικοοικονομικές καταστάσεις",
+    "about.target.workersDesc":
+      "Επαγγελματίες που οργανώνουν δραστηριότητες για μειονεκτούντες νέους",
+    "about.target.stakeholdersDesc":
+      "Οργανισμοί που εργάζονται για την ένταξη των νέων και τη βιώσιμη κινητικότητα",
+    "about.projectOverview.p1":
+      "Το CYCLOS (Youth Cycling for Inclusion) είναι μια Σύμπραξη Συνεργασίας ERASMUS+ KA220-YOU που συγκεντρώνει τέσσερις οργανισμούς από τη Γαλλία, τη Ρουμανία, την Αυστρία και την Ελλάδα. Το έργο αντιμετωπίζει μια κρίσιμη πρόκληση: πολλοί μειονεκτούντες νέοι αντιμετωπίζουν εμπόδια στην απασχόληση και την κοινωνική ένταξη, με την κινητικότητα να αποτελεί σημαντικό εμπόδιο.",
+    "about.projectOverview.p2":
+      "Εστιάζοντας στην ποδηλασία ως εργαλείο ένταξης, το CYCLOS στοχεύει να βοηθήσει αυτούς τους νέους να ξεπεράσουν τα εμπόδια κινητικότητας, να αναπτύξουν πρακτικές δεξιότητες, να χτίσουν αυτοπεποίθηση και να γίνουν πιο αυτόνομοι. Ταυτόχρονα, το έργο προωθεί την περιβαλλοντική ευαισθητοποίηση και τις βιώσιμες πρακτικές μεταφοράς.",
+    "about.projectOverview.p3":
+      "Το έργο θα αναπτύξει εκπαιδευτικό υλικό, θα οργανώσει πρακτικές συνεδρίες ποδηλασίας, θα δημιουργήσει μια ψηφιακή πλατφόρμα μάθησης και θα παρέχει εκπαίδευση για εργαζόμενους νεολαίας στις χώρες-εταίρους.",
     "about.fundedBy": "Χρηματοδοτείται από την Ευρωπαϊκή Ένωση",
-    "about.fundedByDesc": "Το CYCLOS είναι μια Σύμπραξη Συνεργασίας που χρηματοδοτείται στο πλαίσιο του Προγράμματος ERASMUS+ (KA220-YOU) με συνολικό προϋπολογισμό 250.000 ευρώ. Το έργο συντονίζεται από την FLVS (Γαλλία) σε συνεργασία με οργανισμούς από τη Ρουμανία, την Αυστρία και την Ελλάδα.",
-    "about.objective1": "Προώθηση της κοινωνικής ένταξης μειονεκτούντων νέων μέσω της ποδηλασίας",
-    "about.objective2": "Αύξηση της περιβαλλοντικής ευαισθητοποίησης και ενθάρρυνση πιο πράσινων επιλογών κινητικότητας",
-    "about.objective3": "Βοήθεια στους νέους να γίνουν πιο αυτόνομοι και ανεξάρτητοι στην καθημερινή τους ζωή",
-    "about.objective4": "Ενίσχυση δεξιοτήτων, αυτοπεποίθησης και απασχολησιμότητας",
-    "about.objective5": "Εξοπλισμός εργαζομένων νεολαίας με εργαλεία για την οργάνωση συμπεριληπτικών συνεδριών ποδηλασίας",
-    "about.objective6": "Ανάπτυξη ψηφιακής πλατφόρμας για μάθηση και ευαισθητοποίηση",
+    "about.fundedByDesc":
+      "Το CYCLOS είναι μια Σύμπραξη Συνεργασίας που χρηματοδοτείται στο πλαίσιο του Προγράμματος ERASMUS+ (KA220-YOU) με συνολικό προϋπολογισμό 250.000 ευρώ. Το έργο συντονίζεται από την FLVS (Γαλλία) σε συνεργασία με οργανισμούς από τη Ρουμανία, την Αυστρία και την Ελλάδα.",
+    "about.objective1":
+      "Προώθηση της κοινωνικής ένταξης μειονεκτούντων νέων μέσω της ποδηλασίας",
+    "about.objective2":
+      "Αύξηση της περιβαλλοντικής ευαισθητοποίησης και ενθάρρυνση πιο πράσινων επιλογών κινητικότητας",
+    "about.objective3":
+      "Βοήθεια στους νέους να γίνουν πιο αυτόνομοι και ανεξάρτητοι στην καθημερινή τους ζωή",
+    "about.objective4":
+      "Ενίσχυση δεξιοτήτων, αυτοπεποίθησης και απασχολησιμότητας",
+    "about.objective5":
+      "Εξοπλισμός εργαζομένων νεολαίας με εργαλεία για την οργάνωση συμπεριληπτικών συνεδριών ποδηλασίας",
+    "about.objective6":
+      "Ανάπτυξη ψηφιακής πλατφόρμας για μάθηση και ευαισθητοποίηση",
 
     // Partners
     "partners.title": "Οργανισμοί Εταίροι",
@@ -802,6 +879,8 @@ export const translations = {
     // Footer
     "footer.project": "Ένα Έργο ERASMUS+",
     "footer.funding": "Συγχρηματοδοτείται από την Ευρωπαϊκή Ένωση",
+    "footer.description":
+      "Προώθηση της κοινωνικής ένταξης μειονεκτούντων νέων μέσω της ποδηλασίας, της περιβαλλοντικής ευαισθητοποίησης και της βιώσιμης κινητικότητας.",
     "footer.disclaimer":
       "Χρηματοδοτείται από την Ευρωπαϊκή Ένωση. Οι απόψεις και οι γνώμες που εκφράζονται είναι αποκλειστικά του/των συγγραφέα/ων και δεν αντικατοπτρίζουν απαραίτητα τις απόψεις της Ευρωπαϊκής Ένωσης ή του Ευρωπαϊκού Εκτελεστικού Οργανισμού Εκπαίδευσης και Πολιτισμού (EACEA). Ούτε η Ευρωπαϊκή Ένωση ούτε ο EACEA μπορούν να θεωρηθούν υπεύθυνοι για αυτές.",
     "footer.rights": "Με επιφύλαξη παντός δικαιώματος.",
