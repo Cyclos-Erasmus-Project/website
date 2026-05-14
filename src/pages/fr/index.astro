@@ -51,14 +51,6 @@ const partners = [
     },
 ];
 
-const workPackages = [
-    { id: "wp1", num: 1 },
-    { id: "wp2", num: 2 },
-    { id: "wp3", num: 3 },
-    { id: "wp4", num: 4 },
-    { id: "wp5", num: 5 },
-];
-
 // Get latest news for this language
 const allNews = await getCollection("news", ({ data }) => data.lang === lang);
 const latestNews = allNews
@@ -257,40 +249,6 @@ function formatDate(date: Date): string {
             <div class="text-center mt-8">
                 <a href={`${base}/${lang}/partners/`} class="btn-outline">
                     {t("home.partners.viewAll")}
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work Packages Section -->
-    <section class="section">
-        <div class="container-wide">
-            <h2 class="text-center mb-4">{t("home.workPackages.title")}</h2>
-            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-                {t("wp.subtitle")}
-            </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {
-                    workPackages.map((wp) => (
-                        <div class="card p-6 hover:shadow-lg transition-shadow border-l-4 border-lime-500">
-                            <div class="flex items-center mb-3">
-                                <span class="w-10 h-10 bg-lime-100 text-lime-700 rounded-full flex items-center justify-center font-bold mr-3">
-                                    {wp.num}
-                                </span>
-                                <h3 class="font-semibold">
-                                    {t(`wp.${wp.id}.title` as any)}
-                                </h3>
-                            </div>
-                            <p class="text-gray-600 text-sm">
-                                {t(`wp.${wp.id}.desc` as any)}
-                            </p>
-                        </div>
-                    ))
-                }
-            </div>
-            <div class="text-center mt-8">
-                <a href={`${base}/${lang}/work-packages/`} class="btn-primary">
-                    {t("home.workPackages.viewAll")}
                 </a>
             </div>
         </div>

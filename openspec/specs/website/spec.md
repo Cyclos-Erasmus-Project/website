@@ -19,11 +19,12 @@ The website SHALL provide a homepage that communicates the CYCLOS project's purp
 - **AND** no placeholder initials are shown when logos are available
 
 ### Requirement: Navigation
+
 The website SHALL provide consistent navigation across all pages with language switching capability.
 
 #### Scenario: User navigates between pages
 - **WHEN** a user is on any page
-- **THEN** the system displays a navigation menu with links to Home, About, Partners, Work Packages, News, Resources, and Contact
+- **THEN** the system displays a navigation menu with links to Home, About, Partners, News, Resources, and Contact
 - **AND** the navigation indicates the current active page
 
 #### Scenario: User switches language
@@ -77,18 +78,6 @@ The website SHALL provide a partners page showcasing all partner organizations.
   - ASSOC (Romania)
   - AFIS - Austrian Forum for Integration and Sustainability (Austria)
   - Computer Solutions SA (Greece)
-
-### Requirement: Work Packages Page
-The website SHALL provide a page explaining the 5 work packages of the project.
-
-#### Scenario: User views work packages
-- **WHEN** a user navigates to the work packages page
-- **THEN** the system displays information about all 5 work packages:
-  - WP1: Project Management
-  - WP2: Cycling Knowledge
-  - WP3: From Theory to Practice in Cycling
-  - WP4: Digital Platform and Awareness
-  - WP5: Dissemination, Recommendations, and Quality Evaluation
 
 ### Requirement: News Section
 The website SHALL provide a news section for project updates and announcements.

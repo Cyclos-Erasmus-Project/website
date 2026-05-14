@@ -4,6 +4,38 @@ This log tracks stakeholder feedback and requests that result in OpenSpec change
 
 ---
 
+## 2026-05-07: Romania Partner Meeting Feedback
+
+**From:** Project consortium (in-person meeting)
+**Location:** Romania
+**Dates:** 5–7 May 2026
+
+### Summary
+
+Two website change requests surfaced during the partner meeting:
+
+1. **Remove the Work Packages section** — partners want the dedicated work packages page (and its navigation entry) taken out of the public site.
+2. **Hero images appear too dark** — the hero imagery across pages reads as visually dark; partners would like them lightened or replaced with brighter alternatives.
+
+### Status
+
+1. **Remove Work Packages section** — **Implemented in v0.11.0** (2026-05-14). OpenSpec change archived at `openspec/changes/archive/2026-05-14-remove-work-packages/`.
+2. **Lighten hero imagery** — **Declined.**
+
+### Rationale for declining (2)
+
+The hero section is a video background (`/videos/hero1.mp4`) with a heavy dark-blue gradient overlay at 70–80% opacity (`bg-gradient-to-br from-blue-900/80 via-blue-800/70 to-blue-900/80`), white foreground text, and `drop-shadow` for cosmetic legibility. The overlay is what guarantees the white headline/subtitle clear WCAG 2.1 AA contrast (4.5:1 normal text, 3:1 large text) against every frame of the underlying video.
+
+Naively lightening the overlay (or swapping in a brighter video without compensating) would make contrast frame-dependent — passing on dark frames and failing on bright ones (sky, light clothing, pavement). This is exactly the failure mode WCAG SC 1.4.3 prohibits, and the `website` spec's *Accessibility › Color contrast* scenario requires AA compliance for all text. Drop shadows do not count toward measured contrast.
+
+Decision: keep the current hero treatment. If partners raise it again, mitigation options that preserve AA — localized scrim behind text only, bottom-up gradient, or a brighter source video paired with a sufficient overlay — should be evaluated first rather than a blanket opacity reduction.
+
+### Notes
+
+- Removing the Work Packages page touches the `website` spec (currently includes a Work Packages requirement) and will require a `REMOVED Requirements` delta if approved.
+
+---
+
 ## 2026-02-03: French Website Content Corrections
 
 **From:** Sophie MCGANNAN <sophie.mcgannan@vivonsenforme.org>  

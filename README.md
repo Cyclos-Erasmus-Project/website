@@ -125,7 +125,6 @@ Each language folder contains the following pages:
 | Home | `/[lang]/` | Project overview and highlights |
 | About | `/[lang]/about/` | Project background, objectives, timeline |
 | Partners | `/[lang]/partners/` | Partner organization profiles |
-| Work Packages | `/[lang]/work-packages/` | WP1-WP5 descriptions |
 | News | `/[lang]/news/` | Project updates and announcements |
 | Resources | `/[lang]/resources/` | Downloadable materials |
 | Contact | `/[lang]/contact/` | Partner contact information |

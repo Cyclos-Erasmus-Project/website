@@ -33,6 +33,8 @@ This static website serves as the public-facing platform to:
 - WP4: Digital Platform and Awareness (learning app)
 - WP5: Dissemination, Recommendations, and Quality Evaluation
 
+> Note: The Work Packages structure is internal project-management context for the ERASMUS+ grant. It is intentionally **not** exposed on the public website (decision taken at the Romania partner meeting, May 2026). Do not re-introduce a public Work Packages page or homepage section without a new approved change.
+
 ## Tech Stack
 
 - **Framework**: Astro (static site generator)

@@ -16,7 +16,6 @@ export const translations = {
     "nav.home": "Home",
     "nav.about": "About",
     "nav.partners": "Partners",
-    "nav.workPackages": "Work Packages",
     "nav.news": "News",
     "nav.resources": "Resources",
     "nav.contact": "Contact",
@@ -46,8 +45,6 @@ export const translations = {
     "home.partners.viewAll": "View All Partners",
     "home.news.title": "Latest News",
     "home.news.viewAll": "View All News",
-    "home.workPackages.title": "Work Packages",
-    "home.workPackages.viewAll": "Learn More About Our Work",
 
     // About
     "about.title": "About CYCLOS",
@@ -101,31 +98,6 @@ export const translations = {
     "partners.workingTogether": "Working Together Across Europe",
     "partners.workingTogetherDesc":
       "Our diverse partnership brings together expertise in health promotion, social services, education, and technology to create meaningful impact for disadvantaged youth.",
-
-    // Work Packages
-    "wp.title": "Work Packages",
-    "wp.subtitle": "The project is organized into five work packages",
-    "wp.activities": "Key Activities",
-    "wp.deliverables": "Deliverables",
-    "wp.budgetOverview": "Budget Overview",
-    "wp.ledBy": "Led by",
-    "wp.budgetAllocation": "Budget allocation",
-    "wp.totalBudget": "Total Project Budget",
-    "wp.wp1.title": "WP1: Project Management",
-    "wp.wp1.desc":
-      "Coordination, quality assurance, and administrative management of the project.",
-    "wp.wp2.title": "WP2: Cycling Knowledge",
-    "wp.wp2.desc":
-      "Development of educational materials and training modules on cycling.",
-    "wp.wp3.title": "WP3: From Theory to Practice",
-    "wp.wp3.desc":
-      "Practical cycling sessions for disadvantaged youth and training for professionals.",
-    "wp.wp4.title": "WP4: Digital Platform",
-    "wp.wp4.desc":
-      "Development of a digital learning application for cycling and environmental awareness.",
-    "wp.wp5.title": "WP5: Dissemination & Evaluation",
-    "wp.wp5.desc":
-      "Communication, dissemination of results, and quality evaluation.",
 
     // News
     "news.title": "News & Updates",
@@ -189,7 +161,6 @@ export const translations = {
     "nav.home": "Accueil",
     "nav.about": "À propos",
     "nav.partners": "Partenaires",
-    "nav.workPackages": "Lots de travail",
     "nav.news": "Actualités",
     "nav.resources": "Ressources",
     "nav.contact": "Contact",
@@ -219,8 +190,6 @@ export const translations = {
     "home.partners.viewAll": "Voir tous les partenaires",
     "home.news.title": "Dernières Actualités",
     "home.news.viewAll": "Voir toutes les actualités",
-    "home.workPackages.title": "Lots de Travail",
-    "home.workPackages.viewAll": "En savoir plus sur notre travail",
 
     // About
     "about.title": "À propos de CYCLOS",
@@ -278,32 +247,6 @@ export const translations = {
     "partners.workingTogether": "Travailler ensemble à travers l'Europe",
     "partners.workingTogetherDesc":
       "Notre partenariat diversifié réunit des expertises en promotion de la santé, services sociaux, éducation et technologie pour créer un impact significatif pour les jeunes défavorisés.",
-
-    // Work Packages
-    "wp.title": "Lots de Travail",
-    "wp.subtitle":
-      "Le projet CYCLOS s'articule autour de cinq lots de travail complémentaires",
-    "wp.activities": "Activités clés",
-    "wp.deliverables": "Livrables",
-    "wp.budgetOverview": "Aperçu du budget",
-    "wp.ledBy": "Dirigé par",
-    "wp.budgetAllocation": "Allocation budgétaire",
-    "wp.totalBudget": "Budget total du projet",
-    "wp.wp1.title": "LT1 – Gestion de projet",
-    "wp.wp1.desc":
-      "Pilotage global, assurance qualité et gestion administrative.",
-    "wp.wp2.title": "LT2 – Transmission des savoirs cyclistes",
-    "wp.wp2.desc":
-      "Conception de supports pédagogiques et de modules de formation dédiés au vélo.",
-    "wp.wp3.title": "LT3 – Du savoir à la pratique",
-    "wp.wp3.desc":
-      "Ateliers pratiques pour les jeunes en situation de vulnérabilité et formation des encadrants.",
-    "wp.wp4.title": "LT4 – Outil numérique d'apprentissage",
-    "wp.wp4.desc":
-      "Création d'une application interactive pour l'apprentissage du vélo et la sensibilisation écologique.",
-    "wp.wp5.title": "LT5 – Impact et pérennité",
-    "wp.wp5.desc":
-      "Stratégie de communication, valorisation des résultats et évaluation continue.",
 
     // News
     "news.title": "Actualités",
@@ -367,7 +310,6 @@ export const translations = {
     "nav.home": "Acasă",
     "nav.about": "Despre",
     "nav.partners": "Parteneri",
-    "nav.workPackages": "Pachete de lucru",
     "nav.news": "Știri",
     "nav.resources": "Resurse",
     "nav.contact": "Contact",
@@ -397,8 +339,6 @@ export const translations = {
     "home.partners.viewAll": "Vezi toți partenerii",
     "home.news.title": "Ultimele Știri",
     "home.news.viewAll": "Vezi toate știrile",
-    "home.workPackages.title": "Pachete de Lucru",
-    "home.workPackages.viewAll": "Află mai multe despre activitatea noastră",
 
     // About
     "about.title": "Despre CYCLOS",
@@ -455,31 +395,6 @@ export const translations = {
     "partners.workingTogether": "Lucram impreuna in toata Europa",
     "partners.workingTogetherDesc":
       "Parteneriatul nostru divers reuneste expertiza in promovarea sanatatii, servicii sociale, educatie si tehnologie pentru a crea un impact semnificativ pentru tinerii defavorizati.",
-
-    // Work Packages
-    "wp.title": "Pachete de Lucru",
-    "wp.subtitle": "Proiectul este organizat în cinci pachete de lucru",
-    "wp.activities": "Activități cheie",
-    "wp.deliverables": "Livrabile",
-    "wp.budgetOverview": "Prezentare generală a bugetului",
-    "wp.ledBy": "Condus de",
-    "wp.budgetAllocation": "Alocare bugetară",
-    "wp.totalBudget": "Bugetul total al proiectului",
-    "wp.wp1.title": "PL1: Managementul Proiectului",
-    "wp.wp1.desc":
-      "Coordonare, asigurarea calității și managementul administrativ al proiectului.",
-    "wp.wp2.title": "PL2: Cunoștințe de Ciclism",
-    "wp.wp2.desc":
-      "Dezvoltarea materialelor educaționale și modulelor de formare despre ciclism.",
-    "wp.wp3.title": "PL3: De la Teorie la Practică",
-    "wp.wp3.desc":
-      "Sesiuni practice de ciclism pentru tinerii defavorizați și formare pentru profesioniști.",
-    "wp.wp4.title": "PL4: Platforma Digitală",
-    "wp.wp4.desc":
-      "Dezvoltarea unei aplicații de învățare digitală pentru ciclism și conștientizare ecologică.",
-    "wp.wp5.title": "PL5: Diseminare și Evaluare",
-    "wp.wp5.desc":
-      "Comunicare, diseminarea rezultatelor și evaluarea calității.",
 
     // News
     "news.title": "Știri și Actualizări",
@@ -543,7 +458,6 @@ export const translations = {
     "nav.home": "Startseite",
     "nav.about": "Über uns",
     "nav.partners": "Partner",
-    "nav.workPackages": "Arbeitspakete",
     "nav.news": "Aktuelles",
     "nav.resources": "Ressourcen",
     "nav.contact": "Kontakt",
@@ -573,8 +487,6 @@ export const translations = {
     "home.partners.viewAll": "Alle Partner ansehen",
     "home.news.title": "Aktuelle Nachrichten",
     "home.news.viewAll": "Alle Nachrichten ansehen",
-    "home.workPackages.title": "Arbeitspakete",
-    "home.workPackages.viewAll": "Mehr über unsere Arbeit erfahren",
 
     // About
     "about.title": "Über CYCLOS",
@@ -631,31 +543,6 @@ export const translations = {
     "partners.workingTogether": "Gemeinsam in ganz Europa",
     "partners.workingTogetherDesc":
       "Unsere vielfältige Partnerschaft vereint Expertise in Gesundheitsförderung, sozialen Diensten, Bildung und Technologie, um einen bedeutsamen Beitrag für benachteiligte Jugendliche zu leisten.",
-
-    // Work Packages
-    "wp.title": "Arbeitspakete",
-    "wp.subtitle": "Das Projekt ist in fünf Arbeitspakete gegliedert",
-    "wp.activities": "Wichtige Aktivitäten",
-    "wp.deliverables": "Ergebnisse",
-    "wp.budgetOverview": "Budgetübersicht",
-    "wp.ledBy": "Geleitet von",
-    "wp.budgetAllocation": "Budgetzuweisung",
-    "wp.totalBudget": "Gesamtprojektbudget",
-    "wp.wp1.title": "AP1: Projektmanagement",
-    "wp.wp1.desc":
-      "Koordination, Qualitätssicherung und administrative Leitung des Projekts.",
-    "wp.wp2.title": "AP2: Radfahrwissen",
-    "wp.wp2.desc":
-      "Entwicklung von Bildungsmaterialien und Schulungsmodulen zum Thema Radfahren.",
-    "wp.wp3.title": "AP3: Von der Theorie zur Praxis",
-    "wp.wp3.desc":
-      "Praktische Radfahrsitzungen für benachteiligte Jugendliche und Schulung für Fachkräfte.",
-    "wp.wp4.title": "AP4: Digitale Plattform",
-    "wp.wp4.desc":
-      "Entwicklung einer digitalen Lernapp für Radfahren und Umweltbewusstsein.",
-    "wp.wp5.title": "AP5: Verbreitung und Evaluation",
-    "wp.wp5.desc":
-      "Kommunikation, Verbreitung der Ergebnisse und Qualitätsbewertung.",
 
     // News
     "news.title": "Neuigkeiten",
@@ -720,7 +607,6 @@ export const translations = {
     "nav.home": "Αρχική",
     "nav.about": "Σχετικά",
     "nav.partners": "Εταίροι",
-    "nav.workPackages": "Πακέτα Εργασίας",
     "nav.news": "Νέα",
     "nav.resources": "Πόροι",
     "nav.contact": "Επικοινωνία",
@@ -750,8 +636,6 @@ export const translations = {
     "home.partners.viewAll": "Δείτε Όλους τους Εταίρους",
     "home.news.title": "Τελευταία Νέα",
     "home.news.viewAll": "Δείτε Όλα τα Νέα",
-    "home.workPackages.title": "Πακέτα Εργασίας",
-    "home.workPackages.viewAll": "Μάθετε Περισσότερα για την Εργασία Μας",
 
     // About
     "about.title": "Σχετικά με το CYCLOS",
@@ -808,31 +692,6 @@ export const translations = {
     "partners.workingTogether": "Συνεργασία σε Ολόκληρη την Ευρώπη",
     "partners.workingTogetherDesc":
       "Η ποικιλόμορφη συνεργασία μας συγκεντρώνει εμπειρογνωμοσύνη στην προώθηση της υγείας, τις κοινωνικές υπηρεσίες, την εκπαίδευση και την τεχνολογία για να δημιουργήσει σημαντικό αντίκτυπο για τους μειονεκτούντες νέους.",
-
-    // Work Packages
-    "wp.title": "Πακέτα Εργασίας",
-    "wp.subtitle": "Το έργο είναι οργανωμένο σε πέντε πακέτα εργασίας",
-    "wp.activities": "Κύριες Δραστηριότητες",
-    "wp.deliverables": "Παραδοτέα",
-    "wp.budgetOverview": "Επισκόπηση Προϋπολογισμού",
-    "wp.ledBy": "Με επικεφαλής",
-    "wp.budgetAllocation": "Κατανομή προϋπολογισμού",
-    "wp.totalBudget": "Συνολικός Προϋπολογισμός Έργου",
-    "wp.wp1.title": "ΠΕ1: Διαχείριση Έργου",
-    "wp.wp1.desc":
-      "Συντονισμός, διασφάλιση ποιότητας και διοικητική διαχείριση του έργου.",
-    "wp.wp2.title": "ΠΕ2: Γνώσεις Ποδηλασίας",
-    "wp.wp2.desc":
-      "Ανάπτυξη εκπαιδευτικού υλικού και ενοτήτων κατάρτισης για την ποδηλασία.",
-    "wp.wp3.title": "ΠΕ3: Από τη Θεωρία στην Πράξη",
-    "wp.wp3.desc":
-      "Πρακτικές συνεδρίες ποδηλασίας για μειονεκτούντες νέους και κατάρτιση για επαγγελματίες.",
-    "wp.wp4.title": "ΠΕ4: Ψηφιακή Πλατφόρμα",
-    "wp.wp4.desc":
-      "Ανάπτυξη ψηφιακής εφαρμογής μάθησης για ποδηλασία και περιβαλλοντική ευαισθητοποίηση.",
-    "wp.wp5.title": "ΠΕ5: Διάδοση και Αξιολόγηση",
-    "wp.wp5.desc":
-      "Επικοινωνία, διάδοση αποτελεσμάτων και αξιολόγηση ποιότητας.",
 
     // News
     "news.title": "Νέα και Ενημερώσεις",

@@ -9,6 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 No changes yet.
 
+## [0.11.0] - 2026-05-14
+
+### Removed
+- **Remove the Work Packages section from the public website** (decision from Romania partner meeting, 5–7 May 2026)
+  - Delete dedicated `/[lang]/work-packages/` pages across all 5 languages
+  - Remove Work Packages entries from header nav and footer links
+  - Remove the Work Packages section (WP1–WP5 cards) from each homepage
+  - Remove all `nav.workPackages`, `home.workPackages.*`, and `wp.*` translation keys across EN/FR/RO/DE/EL
+
 ## [0.10.2] - 2026-02-04
 
 ### Fixed

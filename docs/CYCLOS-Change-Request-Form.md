@@ -177,7 +177,6 @@ This form is used to collect information needed to create a formal change propos
 | Homepage | [ ] | |
 | About | [ ] | |
 | Partners | [ ] | |
-| Work Packages | [ ] | |
 | News | [ ] | |
 | Resources | [ ] | |
 | Contact | [ ] | |
