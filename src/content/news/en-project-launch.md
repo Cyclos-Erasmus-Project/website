@@ -6,7 +6,7 @@ lang: en
 tags: ["launch", "partnership", "erasmus+"]
 ---
 
-The CYCLOS (Youth Cycling for Inclusion) project has officially launched, marking the beginning of an exciting 30-month journey to promote social inclusion of disadvantaged young people through cycling.
+The CYCLOS (Cycling for Inclusion) project has officially launched, marking the beginning of an exciting 30-month journey to promote social inclusion of disadvantaged young people through cycling.
 
 ## A European Partnership
 

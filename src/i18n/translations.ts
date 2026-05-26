@@ -24,7 +24,7 @@ export const translations = {
     "nav.skipToContent": "Skip to main content",
 
     // Homepage
-    "home.hero.title": "Youth Cycling for Inclusion",
+    "home.hero.title": "Cycling for Inclusion",
     "home.hero.subtitle":
       "Promoting social inclusion of disadvantaged young people through cycling, environmental awareness, and sustainable mobility.",
     "home.hero.cta": "Learn More",
@@ -68,7 +68,7 @@ export const translations = {
     "about.target.stakeholdersDesc":
       "Organizations working on youth inclusion and sustainable mobility",
     "about.projectOverview.p1":
-      "CYCLOS (Youth Cycling for Inclusion) is an ERASMUS+ KA220-YOU Cooperation Partnership that brings together four organizations from France, Romania, Austria, and Greece. The project addresses a critical challenge: many disadvantaged young people face barriers to employment and social integration, with mobility being a significant obstacle.",
+      "CYCLOS (Cycling for Inclusion) is an ERASMUS+ KA220-YOU Cooperation Partnership that brings together four organizations from France, Romania, Austria, and Greece. The project addresses a critical challenge: many disadvantaged young people face barriers to employment and social integration, with mobility being a significant obstacle.",
     "about.projectOverview.p2":
       "By focusing on cycling as a tool for inclusion, CYCLOS aims to help these young people overcome mobility barriers, develop practical skills, build confidence, and become more autonomous. At the same time, the project promotes environmental awareness and sustainable transportation practices.",
     "about.projectOverview.p3":
@@ -169,7 +169,7 @@ export const translations = {
     "nav.skipToContent": "Aller au contenu principal",
 
     // Homepage
-    "home.hero.title": "Le vélo pour l'inclusion des jeunes",
+    "home.hero.title": "Le vélo pour l'inclusion",
     "home.hero.subtitle":
       "Promouvoir l'inclusion sociale des jeunes défavorisés à travers le cyclisme, la sensibilisation environnementale et la mobilité durable.",
     "home.hero.cta": "En savoir plus",
@@ -215,7 +215,7 @@ export const translations = {
     "about.target.stakeholdersDesc":
       "Structures engagées dans l'inclusion des jeunes et la promotion de la mobilité durable.",
     "about.projectOverview.p1":
-      "CYCLOS (Youth Cycling for Inclusion) est un projet de partenariat de coopération Erasmus+ (KA220-YOU) qui réunit quatre organisations issues de France, de Roumanie, d'Autriche et de Grèce. Le projet répond à un enjeu majeur : de nombreux jeunes en situation de vulnérabilité rencontrent des obstacles importants à l'emploi et à l'insertion sociale, la mobilité constituant l'un des freins principaux.",
+      "CYCLOS (Cycling for Inclusion) est un projet de partenariat de coopération Erasmus+ (KA220-YOU) qui réunit quatre organisations issues de France, de Roumanie, d'Autriche et de Grèce. Le projet répond à un enjeu majeur : de nombreux jeunes en situation de vulnérabilité rencontrent des obstacles importants à l'emploi et à l'insertion sociale, la mobilité constituant l'un des freins principaux.",
     "about.projectOverview.p2":
       "En s'appuyant sur le vélo comme outil d'inclusion, CYCLOS vise à aider ces jeunes à surmonter les difficultés liées à la mobilité, à développer des compétences pratiques, à renforcer leur confiance en eux et à gagner en autonomie. Parallèlement, le projet encourage la sensibilisation aux enjeux environnementaux et la promotion de modes de transport durables.",
     "about.projectOverview.p3":
@@ -318,7 +318,7 @@ export const translations = {
     "nav.skipToContent": "Sari la conținutul principal",
 
     // Homepage
-    "home.hero.title": "Ciclismul pentru Incluziunea Tinerilor",
+    "home.hero.title": "Ciclismul pentru Incluziune",
     "home.hero.subtitle":
       "Promovarea incluziunii sociale a tinerilor defavorizați prin ciclism, conștientizare ecologică și mobilitate durabilă.",
     "home.hero.cta": "Află mai multe",
@@ -363,7 +363,7 @@ export const translations = {
     "about.target.stakeholdersDesc":
       "Organizații care lucrează pentru incluziunea tinerilor și mobilitatea durabilă",
     "about.projectOverview.p1":
-      "CYCLOS (Youth Cycling for Inclusion) este un parteneriat de cooperare ERASMUS+ KA220-YOU care reunește patru organizații din Franța, România, Austria și Grecia. Proiectul abordează o provocare critică: mulți tineri defavorizați se confruntă cu bariere în calea angajării și integrării sociale, mobilitatea fiind un obstacol semnificativ.",
+      "CYCLOS (Cycling for Inclusion) este un parteneriat de cooperare ERASMUS+ KA220-YOU care reunește patru organizații din Franța, România, Austria și Grecia. Proiectul abordează o provocare critică: mulți tineri defavorizați se confruntă cu bariere în calea angajării și integrării sociale, mobilitatea fiind un obstacol semnificativ.",
     "about.projectOverview.p2":
       "Concentrându-se pe ciclism ca instrument de incluziune, CYCLOS își propune să ajute acești tineri să depășească barierele de mobilitate, să dezvolte abilități practice, să-și construiască încrederea și să devină mai autonomi. În același timp, proiectul promovează conștientizarea ecologică și practicile de transport durabil.",
     "about.projectOverview.p3":
@@ -466,7 +466,7 @@ export const translations = {
     "nav.skipToContent": "Zum Hauptinhalt springen",
 
     // Homepage
-    "home.hero.title": "Radfahren für die Inklusion von Jugendlichen",
+    "home.hero.title": "Radfahren für die Inklusion",
     "home.hero.subtitle":
       "Förderung der sozialen Inklusion benachteiligter junger Menschen durch Radfahren, Umweltbewusstsein und nachhaltige Mobilität.",
     "home.hero.cta": "Mehr erfahren",
@@ -511,7 +511,7 @@ export const translations = {
     "about.target.stakeholdersDesc":
       "Organisationen, die sich für Jugendinklusion und nachhaltige Mobilität einsetzen",
     "about.projectOverview.p1":
-      "CYCLOS (Youth Cycling for Inclusion) ist eine ERASMUS+ KA220-YOU Kooperationspartnerschaft, die vier Organisationen aus Frankreich, Rumänien, Österreich und Griechenland zusammenbringt. Das Projekt befasst sich mit einer kritischen Herausforderung: Viele benachteiligte junge Menschen stehen vor Hindernissen bei der Beschäftigung und sozialen Integration, wobei Mobilität ein erhebliches Hindernis darstellt.",
+      "CYCLOS (Cycling for Inclusion) ist eine ERASMUS+ KA220-YOU Kooperationspartnerschaft, die vier Organisationen aus Frankreich, Rumänien, Österreich und Griechenland zusammenbringt. Das Projekt befasst sich mit einer kritischen Herausforderung: Viele benachteiligte junge Menschen stehen vor Hindernissen bei der Beschäftigung und sozialen Integration, wobei Mobilität ein erhebliches Hindernis darstellt.",
     "about.projectOverview.p2":
       "Mit dem Fokus auf Radfahren als Instrument zur Inklusion zielt CYCLOS darauf ab, diesen jungen Menschen zu helfen, Mobilitätsbarrieren zu überwinden, praktische Fähigkeiten zu entwickeln, Selbstvertrauen aufzubauen und autonomer zu werden. Gleichzeitig fördert das Projekt Umweltbewusstsein und nachhaltige Verkehrspraktiken.",
     "about.projectOverview.p3":
@@ -615,7 +615,7 @@ export const translations = {
     "nav.skipToContent": "Μετάβαση στο κύριο περιεχόμενο",
 
     // Homepage
-    "home.hero.title": "Ποδηλασία για την Ένταξη των Νέων",
+    "home.hero.title": "Ποδηλασία για την Ένταξη",
     "home.hero.subtitle":
       "Προώθηση της κοινωνικής ένταξης μειονεκτούντων νέων μέσω της ποδηλασίας, της περιβαλλοντικής ευαισθητοποίησης και της βιώσιμης κινητικότητας.",
     "home.hero.cta": "Μάθετε Περισσότερα",
@@ -660,7 +660,7 @@ export const translations = {
     "about.target.stakeholdersDesc":
       "Οργανισμοί που εργάζονται για την ένταξη των νέων και τη βιώσιμη κινητικότητα",
     "about.projectOverview.p1":
-      "Το CYCLOS (Youth Cycling for Inclusion) είναι μια Σύμπραξη Συνεργασίας ERASMUS+ KA220-YOU που συγκεντρώνει τέσσερις οργανισμούς από τη Γαλλία, τη Ρουμανία, την Αυστρία και την Ελλάδα. Το έργο αντιμετωπίζει μια κρίσιμη πρόκληση: πολλοί μειονεκτούντες νέοι αντιμετωπίζουν εμπόδια στην απασχόληση και την κοινωνική ένταξη, με την κινητικότητα να αποτελεί σημαντικό εμπόδιο.",
+      "Το CYCLOS (Cycling for Inclusion) είναι μια Σύμπραξη Συνεργασίας ERASMUS+ KA220-YOU που συγκεντρώνει τέσσερις οργανισμούς από τη Γαλλία, τη Ρουμανία, την Αυστρία και την Ελλάδα. Το έργο αντιμετωπίζει μια κρίσιμη πρόκληση: πολλοί μειονεκτούντες νέοι αντιμετωπίζουν εμπόδια στην απασχόληση και την κοινωνική ένταξη, με την κινητικότητα να αποτελεί σημαντικό εμπόδιο.",
     "about.projectOverview.p2":
       "Εστιάζοντας στην ποδηλασία ως εργαλείο ένταξης, το CYCLOS στοχεύει να βοηθήσει αυτούς τους νέους να ξεπεράσουν τα εμπόδια κινητικότητας, να αναπτύξουν πρακτικές δεξιότητες, να χτίσουν αυτοπεποίθηση και να γίνουν πιο αυτόνομοι. Ταυτόχρονα, το έργο προωθεί την περιβαλλοντική ευαισθητοποίηση και τις βιώσιμες πρακτικές μεταφοράς.",
     "about.projectOverview.p3":

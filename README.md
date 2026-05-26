@@ -1,10 +1,10 @@
-# CYCLOS - Youth Cycling for Inclusion
+# CYCLOS - Cycling for Inclusion
 
 A static website for the CYCLOS ERASMUS+ KA220-YOU Cooperation Partnership project, promoting social inclusion of disadvantaged young people through cycling.
 
 ## About the Project
 
-**CYCLOS** (Youth Cycling for Inclusion) is an EU-funded initiative that:
+**CYCLOS** (Cycling for Inclusion) is an EU-funded initiative that:
 - Raises environmental awareness and promotes greener mobility
 - Helps disadvantaged youth become more autonomous and independent
 - Boosts skills, employability, and social inclusion
@@ -238,5 +238,5 @@ This project is co-funded by the European Union through the ERASMUS+ Programme.
 
 ---
 
-**CYCLOS - Youth Cycling for Inclusion**  
+**CYCLOS - Cycling for Inclusion**  
 ERASMUS+ KA220-YOU Cooperation Partnership

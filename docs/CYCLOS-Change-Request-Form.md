@@ -1,7 +1,7 @@
 # CYCLOS Website - Change Request Form
 
 **Document Purpose:** Stakeholder questionnaire for submitting website change requests  
-**Project:** CYCLOS - Youth Cycling for Inclusion (ERASMUS+ KA220-YOU)  
+**Project:** CYCLOS - Cycling for Inclusion (ERASMUS+ KA220-YOU)  
 **Maintained by:** Computer Solutions SA (Greece)  
 **Version:** 1.0  
 **Date:** December 2025

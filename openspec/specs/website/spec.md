@@ -9,6 +9,7 @@ The website SHALL provide a homepage that communicates the CYCLOS project's purp
 #### Scenario: User visits homepage
 - **WHEN** a user navigates to the website root
 - **THEN** the system displays the CYCLOS logo, project tagline, and key objectives
+- **AND** the project tagline reads "Cycling for Inclusion" (not "Youth Cycling for Inclusion")
 - **AND** the system displays navigation to all main sections
 - **AND** the system displays the EU ERASMUS+ co-funding acknowledgment
 

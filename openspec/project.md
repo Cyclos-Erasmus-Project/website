@@ -2,7 +2,7 @@
 
 ## Purpose
 
-CYCLOS (Youth Cycling for Inclusion) is an ERASMUS+ KA220-YOU Cooperation Partnership project focused on promoting the social inclusion of disadvantaged young people through cycling. The project aims to:
+CYCLOS (Cycling for Inclusion) is an ERASMUS+ KA220-YOU Cooperation Partnership project focused on promoting the social inclusion of disadvantaged young people through cycling. The project aims to:
 
 - Raise environmental awareness and promote greener mobility
 - Help disadvantaged youth become more autonomous and independent

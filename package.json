@@ -2,7 +2,7 @@
   "name": "cyclos-web",
   "type": "module",
   "version": "0.11.0",
-  "description": "CYCLOS - Youth Cycling for Inclusion - ERASMUS+ Project Website",
+  "description": "CYCLOS - Cycling for Inclusion - ERASMUS+ Project Website",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

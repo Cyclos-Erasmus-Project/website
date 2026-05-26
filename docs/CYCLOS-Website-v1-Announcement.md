@@ -21,7 +21,7 @@ The domain `cyclos-project.eu` was purchased by Computer Solutions SA for a 2-ye
 
 | Attribute | Details |
 |-----------|---------|
-| **Project Name** | CYCLOS - Youth Cycling for Inclusion |
+| **Project Name** | CYCLOS - Cycling for Inclusion |
 | **Programme** | ERASMUS+ KA220-YOU Cooperation Partnership |
 | **Duration** | 30 months (September 2025 - February 2028) |
 | **Budget** | €250,000 |
