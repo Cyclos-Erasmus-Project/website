@@ -9,14 +9,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 No changes yet.
 
+## [0.11.1] - 2026-05-26
+
+### Fixed
+- **Update project tagline from "Youth Cycling for Inclusion" to "Cycling for Inclusion" across the site and project metadata**
+  - Update the public-facing tagline/expansion of CYCLOS from "Youth Cycling for Inclusion" to "Cycling for Inclusion" across:
+  - The homepage hero title (all 5 languages)
+  - About-page intro paragraphs (all 5 languages) and project-launch news items
+  - The English parenthetical expansion "(Youth Cycling for Inclusion)" used inside translated pages
+  - Header logo `alt` text and `BaseLayout` default meta description
+
 ## [0.11.0] - 2026-05-14
 
-### Removed
-- **Remove the Work Packages section from the public website** (decision from Romania partner meeting, 5–7 May 2026)
-  - Delete dedicated `/[lang]/work-packages/` pages across all 5 languages
-  - Remove Work Packages entries from header nav and footer links
-  - Remove the Work Packages section (WP1–WP5 cards) from each homepage
-  - Remove all `nav.workPackages`, `home.workPackages.*`, and `wp.*` translation keys across EN/FR/RO/DE/EL
+### Added
+- **Remove the Work Packages page, homepage section, and navigation links from the public website**
+  - `src/pages/en/work-packages.astro`
+  - `src/pages/fr/work-packages.astro`
+  - `src/pages/ro/work-packages.astro`
+  - `src/pages/de/work-packages.astro`
+  - `src/pages/el/work-packages.astro`
 
 ## [0.10.2] - 2026-02-04
 
