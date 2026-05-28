@@ -9,6 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 No changes yet.
 
+## [0.11.2] - 2026-05-28
+
+### Fixed
+- **Restore Romanian diacritics in the Partners section text (partner review by ASSOC)**
+  - Restore Romanian diacritics in the Partners-section strings in `src/i18n/translations.ts`:
+  - `partners.workingTogether`: "Lucram impreuna in toata Europa" → "Lucrăm împreună în toată Europa"
+  - `partners.workingTogetherDesc`: full sentence corrected to "Parteneriatul nostru divers reunește expertiză în promovarea sănătății, servicii sociale, educație și tehnologie pentru a crea un impact semnificativ pentru tinerii defavorizați."
+  - `partners.areasOfExpertise`: "Domenii de expertiza" → "Domenii de expertiză" (same missing-diacritics issue found in the adjacent label)
+
 ## [0.11.1] - 2026-05-26
 
 ### Fixed
