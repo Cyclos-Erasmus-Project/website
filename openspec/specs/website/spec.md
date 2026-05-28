@@ -54,6 +54,11 @@ The website SHALL support content in 5 languages: English (EN), French (FR), Rom
 - **AND** partner descriptions, objectives, and activity lists display in German
 - **AND** no hardcoded English strings remain in German page templates
 
+#### Scenario: Language-specific diacritics
+- **WHEN** a user views translated pages that use a language with diacritics (e.g., Romanian /ro/)
+- **THEN** all UI labels and body text display the correct language-specific diacritics (e.g., "Lucrăm împreună în toată Europa", "Domenii de expertiză")
+- **AND** no plain-ASCII substitutions of accented characters remain in the translated strings
+
 ### Requirement: About Page
 The website SHALL provide an about page explaining the project's background, objectives, and timeline.
 

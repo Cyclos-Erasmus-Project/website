@@ -391,10 +391,10 @@ export const translations = {
     "partners.country": "Țara",
     "partners.website": "Vizitează site-ul",
     "partners.lead": "Partener principal",
-    "partners.areasOfExpertise": "Domenii de expertiza",
-    "partners.workingTogether": "Lucram impreuna in toata Europa",
+    "partners.areasOfExpertise": "Domenii de expertiză",
+    "partners.workingTogether": "Lucrăm împreună în toată Europa",
     "partners.workingTogetherDesc":
-      "Parteneriatul nostru divers reuneste expertiza in promovarea sanatatii, servicii sociale, educatie si tehnologie pentru a crea un impact semnificativ pentru tinerii defavorizati.",
+      "Parteneriatul nostru divers reunește expertiză în promovarea sănătății, servicii sociale, educație și tehnologie pentru a crea un impact semnificativ pentru tinerii defavorizați.",
 
     // News
     "news.title": "Știri și Actualizări",
